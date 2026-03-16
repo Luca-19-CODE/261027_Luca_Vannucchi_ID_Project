@@ -1,70 +1,148 @@
-body{
-    font-family :Arial, Helvetica, sans-serif;
-    background: color #f4f4f4;
-    margin : 0;
+body {
+    margin:0;
+    background-color: rgb(254, 255, 255);
+    font-family: 'Poppins', sans-serif;   
 }
 
-h1 {
-    color: darkblue;
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
 }
 
-
-p{
-    color: #333;
-
+@font-face {
+    font-family: "TitleFont";
+    src: url("../Assets/Fonts/Mythology\ Of\ Egypt.otf");
 }
 
-#mainHeader {
-    background-color:darkblue;
-    color: white;
-    text-align: center;
-    padding: 30px;
-}
-#mainHeader {
-    background-image: url("../assets/img/header4.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+/* This is the Start of the Header */
 
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
+.ImageFace {
+    background-image: cover;
+    background-image: url("../Assets/IMG/homeHeader.png")
 }
 
 
-.card{
-    background-color: white;
-}
-
-.card{
-    background-color:white;
-    padding: 20px;
-    margin: 20px;
-    border: 1px solid #ccc
-}
 
 
-section {
-    width: 80%;
-    margin: 20px auto!important;
+/* This is the Start of the nav */
 
-}
 
-.profileImg {
-    width: 150px;
-    display: block;
-    margin: 0 auto 15px;
-    border: 3px solid #ddd;
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0px 25px;
+    background-color:rgba(255, 255, 255, 0.222);
     border-radius: 20px;
+    height: 75px;
+    width: 90%;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-right: auto;
+
+}
+
+.logo img{
+    width: 250px;
+    height: auto;
+    margin: 10px;
 }
 
 
 
+.menu{
+     width: 50%;
+     display: flex;
+     justify-content: center;
+     list-style: none;
+    align-items: center;
+    gap: 15%;
+}
+
+.menu li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    list-style: none;
+    flex-direction: row;
+}
 
 
 
+.navLinks li a{
+    font-size: 20px;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-weight: 400;
+    align-items: center;
+    transition: 0.2s;
+    
+    
+}
+
+li a:hover {
+  color: aqua;
+  font-size: 18px;
+}
+a:link {
+    text-decoration: none;
+    color: black;
+}
+        /* This is the end of the nav */
+
+/* This is the end of the Header */
+
+
+.hero{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+
+    height: 80vh;
+    
+    text-align: center;
+
+   
+}
+
+.hero button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.feature{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+    
+    
+}
+
+.featureCard{
+    background-color: #7d0677;
+    color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #000000;
+}
 
 
 
+.aboutSection{
+    padding: 60px 20px;
+     text-align: center;
 
+}
 
+.PageTitle{
+    font-family: TitleFont,sans-serif;
+    font-size:  60px;
+    letter-spacing: 2px;
+}
+
+ 
