@@ -15,104 +15,112 @@ h1,h2,h3,h4,h5,h6{
 
 /* This is the Start of the Header */
 
-.ImageFace {
-    background-image: cover;
-    background-image: url("../Assets/IMG/homeHeader.png")
+.HeaderImage {
+    height: 100vh;              /*  "make this box as tall as the whole screen" */
+    position: relative;         /*  "let children sit exactly where I want them" */
+    background-image: url("../Assets/IMG/homeHeader.png");   /* "put this picture as wallpaper" */
+    background-size: cover;     /*  "stretch picture to fill whole box, cut edges if needed" */
+    background-position: center;/*  "try to show the middle of the picture" */
+    background-repeat: no-repeat; /*  "don't copy-paste the picture many times" */
 }
 
+.ImageFace {
+    display: none;              /*  "make this invisible / throw it away from the screen" */
+}
 
+.hero {
+    position: absolute;          /* Positions the hero text block on top of the header background */
+    top: 35%;                    /* Places it about 1/3 down from the top of the header */
+    right: 8%;                   /* Aligns the text block to the right side (like in your screenshot) */
+    transform: none;             /* Removes any previous centering transform */
+    text-align: left;            /* Makes text start from the left edge inside its box */
+    max-width: 520px;            /* Prevents the text from becoming too wide on large screens */
+    color: #ffffff;              /* White text color – good contrast on dark background */
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.85);  /* Strong shadow so text is readable on image */
+    z-index: 10;                 /* Ensures text stays above other overlapping elements */
+}
 
+.hero h1 {
+    font-family: "TitleFont", sans-serif;   /* Uses your custom mythology-style font */
+    font-size: 4.8rem;           /* Very large title – matches dramatic hero look */
+    color: #f4c300;              /* Bright gold/yellow color like in screenshot */
+    margin-bottom: 10px;         /* Small space below the main title */
+    letter-spacing: 3px;         /* Adds elegant spacing between letters */
+}
+
+.hero p {
+    font-size: 1.6rem;           /* Readable but still prominent subtitle size */
+    font-weight: 500;            /* Slightly bolder than normal text */
+}
 
 /* This is the Start of the nav */
 
+.navbar {
+    display: flex;                    /* Uses flexbox to arrange logo + links + search horizontally */
+    flex-direction: row;              /* Items go left to right */
+    justify-content: space-between;   /* Pushes logo left, links center-ish, search right */
+    align-items: center;              /* Vertically centers everything in the bar */
 
-
-.navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 0px 25px;
-    background-color:rgba(255, 255, 255, 0.222);
-    border-radius: 20px;
-    height: 75px;
-    width: 90%;
+    padding: 0px 25px;                /* Inner spacing left & right */
+    background-color: rgba(255, 255, 255, 0.222);  /* Semi-transparent white – glass-like effect */
+    border-radius: 20px;              /* Rounded corners */
+    height: 75px;                     /* Fixed height of the navbar */
+    width: 90%;                       /* Slightly narrower than full width */
     margin-left: auto;
     margin-top: 20px;
-    margin-right: auto;
-
+    margin-right: auto;               /* Centers the navbar horizontally */
 }
 
-.logo img{
-    width: 250px;
-    height: auto;
-    margin: 10px;
+.logo img {
+    width: 250px;                     /* Large logo size */
+    height: auto;                     /* Keeps original proportions */
+    margin: 10px;                     /* Space around the logo image */
 }
 
-
-
-.menu{
-     width: 50%;
-     display: flex;
-     justify-content: center;
-     list-style: none;
+.menu {
+    width: 50%;                       /* Takes half the available space */
+    display: flex;
+    justify-content: center;          /* Centers the menu items horizontally */
+    list-style: none;                 /* Removes bullet points */
     align-items: center;
-    gap: 15%;
+    gap: 15%;                         /* Space between each menu link */
 }
 
-.menu li{
+.menu li {
     display: flex;
     align-items: center;
     justify-content: center;
     
-    list-style: none;
+    list-style: none;                 /* Extra safety – no bullets */
     flex-direction: row;
 }
 
-
-
-.navLinks li a{
-    font-size: 20px;
-    text-decoration: none;
-    color:rgb(0, 0, 0);
-    font-weight: 400;
+.navLinks li a {
+    font-size: 20px;                  /* Large, readable link text */
+    text-decoration: none;            /* No underline by default */
+    color: rgb(0, 0, 0);              /* Black text */
+    font-weight: 400;                 /* Normal weight */
     align-items: center;
-    transition: 0.2s;
-    
-    
+    transition: 0.2s;                 /* Smooth change on hover */
 }
 
 li a:hover {
-  color: aqua;
-  font-size: 18px;
+    color: aqua;                      /* Changes to cyan on hover */
+    font-size: 18px;                  /* Slightly smaller – playful effect */
 }
+
 a:link {
     text-decoration: none;
     color: black;
 }
-        /* This is the end of the nav */
+
+/* This is the end of the nav */
 
 /* This is the end of the Header */
 
 
-.hero{
-    display:flex;
-    flex-direction: column;
-    align-items:center;
 
-    height: 80vh;
-    
-    text-align: center;
 
-   
-}
-
-.hero button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-}
 
 .feature{
     display: flex;
