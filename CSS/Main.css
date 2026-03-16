@@ -36,7 +36,6 @@ h1,h2,h3,h4,h5,h6{
     text-align: left;            /* Makes text start from the left edge inside its box */
     max-width: 520px;            /* Prevents the text from becoming too wide on large screens */
     color: #ffffff;              /* White text color – good contrast on dark background */
-    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.85);  /* Strong shadow so text is readable on image */
     z-index: 10;                 /* Ensures text stays above other overlapping elements */
 }
 
@@ -62,8 +61,8 @@ h1,h2,h3,h4,h5,h6{
     align-items: center;              /* Vertically centers everything in the bar */
 
     padding: 0px 25px;                /* Inner spacing left & right */
-    background-color: rgba(255, 255, 255, 0.222);  /* Semi-transparent white – glass-like effect */
-    border-radius: 20px;              /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.651);  /* Semi-transparent white – glass-like effect */
+    border-radius: 30px;              /* Rounded corners */
     height: 75px;                     /* Fixed height of the navbar */
     width: 90%;                       /* Slightly narrower than full width */
     margin-left: auto;
