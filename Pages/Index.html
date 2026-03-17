@@ -12,7 +12,9 @@
                 <!-- Google font -->
     <link rel="preconnect" href="http://fonts.googleapis.com">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
     </head>
 <body>
@@ -50,7 +52,7 @@
     
     <!-- Header Image - start -->
     <div class="ImageFace">
-        <img src="../Assets/IMG/homeHeader.png">
+        <img src="../Assets/IMG/homeImg1.png">
     </div>
     <!-- Header Image - end -->
 
@@ -70,12 +72,30 @@
 <section class="begin-journey"> <!-- This is the big dark blue section called "BEGIN YOUR JOURNEY" -->
     <div class="journey-wrapper"> <!-- This box holds the picture and the text side-by-side -->
         <div class="journey-image"> <!-- This holds the unicorn picture on the left side -->
-            <img src="../Assets/IMG/slider1.jpg alt="(Tiny Legend Unicorn) width="100px">
+            <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../Assets/IMG/imageSlider1.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
         </div>
         <div class="journey-text"> <!-- This holds all the writing and button on the right side -->
             <span class="section-label">BEGIN YOUR JOURNEY</span>
             <h2>Tiny Legends Big Hearts</h2>
-            <p>Begin your journey into legend: tiny dragons, shimmering pegasi, mischievous kitsune, and watchful basilisks are ready to meet their families. Delight in enchanted encounters, gentle care, and joyful playtime. Heartwarming bonds await as these legendary creatures find their forever homes.</p>
+            <p>
+            <br>Begin your journey into legend: tiny dragons,<br> <br>shimmering pegasi, mischievous kitsune, and<br> 
+            <br>watchful basilisks are ready to meet their families.<br> 
+            <br>Delight in enchanted encounters, gentle care, and<br> <br>joyful playtime. Heartwarming bonds await as these<br> <br>legendary creatures find their forever homes.<br>
+            </p>
             <button>Cradle a Legend</button>
         </div>
     </div>
@@ -84,12 +104,18 @@
     <section class="the-cradle"> <!-- white section for "THE CRADLE" (text left + image right) -->
     <div class="cradle-wrapper"> <!-- flex container that puts text and image side-by-side -->
         <div class="cradle-text"> <!-- left side: all the text and heading -->
-            <span class="section-label">THE CRADLE</span>
-            <h2>A Sanctuary Where Mythical Creatures Find Families</h2>
-            <p>Discover our carefully nurtured mythical creatures, each ready to join a loving family. Experience the joy and wonder of forming a lasting bond, as every adoption is guided with care, ensuring a safe, ethical, and heartwarming journey for both creature and caretaker.</p>
+            <span class="section-label2">THE CRADLE</span>
+            <h2>
+            <br>A Sanctuary Where Mythical<br> 
+            <br>Creatures Find Families<br>
+            </h2>
+            <p>
+            <br>Discover our carefully nurtured mythical creatures,<br> <br>each ready to join a loving family. Experience the<br> <br>joy and wonder of forming a lasting bond, as every<br> <br>adoption is guided with care, ensuring a safe,<br> <br>ethical, and heartwarming journey for both<br> 
+            <br>creature and caretaker.<br>
+            </p>
         </div>
         <div class="cradle-image"> <!-- right side: the phoenix picture -->
-            <img src="../Assets/IMG/phoenix.png" alt="Phoenix">
+            <img src="../Assets/IMG/homeImg1.png" alt="Phoenix">
         </div>
     </div>
 </section>

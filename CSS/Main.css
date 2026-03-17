@@ -118,6 +118,7 @@ a:link {
 /* This is the end of the Header */
 
                 /* This is the start of the first paragraph */
+
 .begin-journey { /* dark blue section for "BEGIN YOUR JOURNEY" */
     background-color: #0a2540; /* deep blue background like the screenshot */
     color: white; /* white text for good contrast */
@@ -135,6 +136,7 @@ a:link {
 
 .section-label{
     color: #f4c300;
+    font-weight: bold;
 }
 
 .journey-image img { /* styles the unicorn picture */
@@ -146,6 +148,12 @@ a:link {
 .journey-text h2 { /* main heading "Tiny Legends Big Hearts" */
     font-size: 2.8rem; /* large title size */
     margin-bottom: 20px; /* space below title */
+    font-weight: bold;
+}
+
+.journey-text p {
+    line-height: 15px;
+    font-size: 20px;
 }
 
 .journey-text button { /* "Cradle a Legend" button */
@@ -162,6 +170,9 @@ a:link {
 
             /* This is the start of the Second paragraph */
 
+
+
+
 .the-cradle { /* white section for "THE CRADLE" */
     background-color: #ffffff; /* clean white background */
     padding: 90px 60px; /* big spacing top/bottom and sides */
@@ -176,14 +187,26 @@ a:link {
     flex-direction: row; /* text left, image right */
 }
 
+.section-label2{
+    color: #f4c300;
+    font-weight: bold;
+}
+
 .cradle-image img { /* styles the phoenix picture */
     width: 100%; /* fills its box */
     max-width: 420px; /* limits picture size */
     border-radius: 20px; /* rounded corners */
+    position: relative;
 }
 
 .cradle-text h2 { /* main heading "A Sanctuary Where Mythical Creatures Find Families" */
     font-size: 2.6rem; /* large title size */
     color: #0a2540; /* dark blue color */
+    font-weight: bold;
+}
+
+.cradle-text p {
+    line-height: 15px;
+    font-size: 20px;
 }
             /* This is the End of the Second paragraph */
