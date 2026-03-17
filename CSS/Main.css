@@ -117,39 +117,73 @@ a:link {
 
 /* This is the end of the Header */
 
-
-
-
-
-.feature{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 50px;
-    
-    
+                /* This is the start of the first paragraph */
+.begin-journey { /* dark blue section for "BEGIN YOUR JOURNEY" */
+    background-color: #0a2540; /* deep blue background like the screenshot */
+    color: white; /* white text for good contrast */
+    padding: 300px 60px; /* big top/bottom and side spacing */
 }
 
-.featureCard{
-    background-color: #7d0677;
-    color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
-    border: 2px solid #000000;
+.journey-wrapper { /* container that puts picture and text side-by-side */
+    display: flex; /* side-by-side layout */
+    align-items: center; /* centers picture and text vertically */
+    gap: 60px; /* space between the picture and text */
+    max-width: 1200px; /* doesn't get too wide on big screens */
+    margin: 0 auto; /* centers the whole section */
 }
 
 
-
-.aboutSection{
-    padding: 60px 20px;
-     text-align: center;
-
+.section-label{
+    color: #f4c300;
 }
 
-.PageTitle{
-    font-family: TitleFont,sans-serif;
-    font-size:  60px;
-    letter-spacing: 2px;
+.journey-image img { /* styles the unicorn picture */
+    width: 100%; /* fills its box */
+    max-width: 420px; /* limits picture size */
+    border-radius: 20px; /* rounded corners */ 
 }
 
+.journey-text h2 { /* main heading "Tiny Legends Big Hearts" */
+    font-size: 2.8rem; /* large title size */
+    margin-bottom: 20px; /* space below title */
+}
+
+.journey-text button { /* "Cradle a Legend" button */
+    background: #00d4ff; /* bright teal color */
+    color: white; /* white text */
+    border: none; /* no border */
+    padding: 16px 40px; /* button size */
+    border-radius: 30px; /* rounded pill shape */
+    font-size: 1.3rem; /* button text size */
+    cursor: pointer; /* hand cursor on hover */
+}
  
+            /* This is the End of the first paragraph */
+
+            /* This is the start of the Second paragraph */
+
+.the-cradle { /* white section for "THE CRADLE" */
+    background-color: #ffffff; /* clean white background */
+    padding: 90px 60px; /* big spacing top/bottom and sides */
+}
+
+.cradle-wrapper { /* container that puts text on left and image on right */
+    display: flex; /* side-by-side layout */
+    align-items: center; /* centers text and image vertically */
+    gap: 80px; /* space between text and image */
+    max-width: 1200px; /* doesn't get too wide on big screens */
+    margin: 0 auto; /* centers the whole section */
+    flex-direction: row; /* text left, image right */
+}
+
+.cradle-image img { /* styles the phoenix picture */
+    width: 100%; /* fills its box */
+    max-width: 420px; /* limits picture size */
+    border-radius: 20px; /* rounded corners */
+}
+
+.cradle-text h2 { /* main heading "A Sanctuary Where Mythical Creatures Find Families" */
+    font-size: 2.6rem; /* large title size */
+    color: #0a2540; /* dark blue color */
+}
+            /* This is the End of the Second paragraph */
