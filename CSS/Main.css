@@ -197,12 +197,15 @@ a:link {
     max-width: 420px; /* limits picture size */
     border-radius: 20px; /* rounded corners */
     position: relative;
+    
 }
 
 .cradle-text h2 { /* main heading "A Sanctuary Where Mythical Creatures Find Families" */
     font-size: 2.6rem; /* large title size */
     color: #0a2540; /* dark blue color */
     font-weight: bold;
+    line-height: 20px;
+    
 }
 
 .cradle-text p {
@@ -210,3 +213,188 @@ a:link {
     font-size: 20px;
 }
             /* This is the End of the Second paragraph */
+
+            /* ADD THIS CSS AT THE VERY BOTTOM of your Main.css file */
+
+/* ====================== PAST FRIENDS SECTION ====================== */
+/* ====================== PAST FRIENDS SECTION (UPDATED - NO WHITE CARDS) ====================== */
+/* Replace ONLY this whole block in your Main.css (everything from .past-friends to the end of the media query) */
+
+/* ====================== PAST FRIENDS SECTION - start ====================== */
+/* This is the big dark blue section called "LOOKING IN ON PAST FRIENDS" */
+.past-friends {
+    background-color: #0a2540;
+    color: white;
+    padding: 100px 60px;
+}
+
+.past-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* This holds the yellow label "LOOKING IN ON PAST FRIENDS" */
+.section-label3 {
+    color: #f4c300;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+/* This is the main heading "From Cradle To Family: A Legend At Home" */
+.past-wrapper h2 {
+    font-size: 2.6rem;
+    margin-bottom: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+/* This grid holds the four success story creatures side-by-side */
+.creatures-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+/* NO CARD BOX - image + text sit directly on the dark blue background */
+.creature-card {
+    background: transparent;           /* removed white card */
+    color: white;                      
+    box-shadow: none;                  /* no card shadow */
+    border-radius: 0;                  /* no card rounding */
+    padding: 0;
+    transition: transform 0.3s;
+}
+
+.creature-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Image is the ONLY rounded part*/
+.creature-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);   /* soft shadow only on image */
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Text sits directly below the image - no card container */
+.creature-card h3 {
+    font-size: 1.35rem;
+    margin: 0 0 8px 0;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.creature-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #e0f0ff;                    
+    text-align: center;
+    padding: 0 10px;
+}
+
+/* This is the "Cradle a Legend" button at the bottom of the past friends section */
+.cradle-btn {
+    background: #00d4ff;
+    color: white;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}
+
+/* ====================== PAST FRIENDS SECTION - end ====================== */
+
+/* ====================== FOOTER - start ====================== */
+/* This is the full site footer with logo, company links and social media icons */
+.site-footer {
+    background-color: #f8f9fa;
+    padding: 60px 60px 30px;
+    color: #333;
+}
+
+.footer-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Left column - logo and tagline */
+.footer-logo img {
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 1.1rem;
+    max-width: 280px;
+}
+
+/* Middle column - Company links */
+.footer-company h4,
+.footer-social h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #0a2540;
+}
+
+.footer-company ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-company li {
+    margin-bottom: 8px;
+}
+
+.footer-company a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-company a:hover {
+    color: #00d4ff;
+}
+
+/* Right column - Social Media Links */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    transition: transform 0.2s;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.15);
+}
+
+/* Bottom bar with copyright and links */
+.footer-bottom {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* ====================== FOOTER - end ====================== */
