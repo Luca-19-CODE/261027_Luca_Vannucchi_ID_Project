@@ -248,6 +248,7 @@ a:link {
     margin-bottom: 50px;
     font-weight: bold;
     color: white;
+    line-height: 20px;
 }
 
 /* This grid holds the four success story creatures side-by-side */
@@ -290,6 +291,7 @@ a:link {
     font-weight: bold;
     color: white;
     text-align: center;
+    line-height: 15px;
 }
 
 .creature-card p {
