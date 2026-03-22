@@ -41,15 +41,19 @@ h1,h2,h3,h4,h5,h6{
 
 .hero h1 {
     font-family: "TitleFont", sans-serif;   /* Uses your custom mythology-style font */
-    font-size: 4.8rem;           /* Very large title – matches dramatic hero look */
-    color: #f4c300;              /* Bright gold/yellow color like in screenshot */
+    font-size: 90px;             /* Kept your exact pixel size (removed the conflicting 4.8rem) */
+    color: #e9ad1c;              /* Bright gold/yellow color like in screenshot */
     margin-bottom: 10px;         /* Small space below the main title */
     letter-spacing: 3px;         /* Adds elegant spacing between letters */
+    line-height: 100px;
+    /* Removed margin-top:100px and margin-left:100px – they were pushing the text off the right alignment */
 }
 
 .hero p {
     font-size: 1.6rem;           /* Readable but still prominent subtitle size */
     font-weight: 500;            /* Slightly bolder than normal text */
+    font-family: "poppins", sans-serif; 
+    /* Removed margin-left:110px – now the subtitle sits cleanly under the title */
 }
 
 /* This is the Start of the nav */
@@ -60,14 +64,16 @@ h1,h2,h3,h4,h5,h6{
     justify-content: space-between;   /* Pushes logo left, links center-ish, search right */
     align-items: center;              /* Vertically centers everything in the bar */
 
-    padding: 0px 25px;                /* Inner spacing left & right */
+    padding: 0px 40px;                /* Inner spacing left & right */
     background-color: rgba(255, 255, 255, 0.651);  /* Semi-transparent white – glass-like effect */
     border-radius: 30px;              /* Rounded corners */
     height: 75px;                     /* Fixed height of the navbar */
     width: 90%;                       /* Slightly narrower than full width */
+    margin-top: 30px;
     margin-left: auto;
     margin-top: 20px;
     margin-right: auto;               /* Centers the navbar horizontally */
+    
 }
 
 .logo img {
@@ -113,6 +119,49 @@ a:link {
     color: black;
 }
 
+/* Container for the search bar */
+/* --- Search Bar Styling --- */
+/* This container holds the input and button together in one rounded box */
+.Search {
+    display: flex;                  /* Puts input and button side-by-side */
+    align-items: center;            /* Vertically centers them */
+    background-color: white;        /* White background for the bar */
+    border:none;       /* Thin black border to match PDF */
+    border-radius: 5px;             /* Slightly rounded corners */
+    padding: 2px 5px;               /* Spacing inside the bar */
+    height: 38px;                   /* Fixed height for the bar */
+}
+
+/* Styles the text typing area */
+.Search input {
+    border: none;                   /* Removes the default input border */
+    outline: none;                  /* Removes the blue glow when clicking */
+    padding: 5px 10px;              /* Space for the text inside */
+    font-size: 16px;                /* Clear, readable font size */
+    width: 180px;                   /* Sets the width of the typing area */
+    background: transparent;        /* Lets the white container show through */
+}
+
+/* Styles the "GO" button inside the bar */
+.Search button {
+    background-color: transparent;  /* No background color */
+    border: none;         /* Thin black outline around the text */
+    border-radius: 0;             /* Matches the button shape in PDF */
+    padding: 2px 10px;              /* Space around the "GO" text */
+    font-size: 14px;                /* Slightly smaller text for the button */
+    font-weight: bold;              /* Makes "GO" stand out */
+    cursor: pointer;                /* Shows the hand icon on hover */
+    transition: 0.2s;               /* Smooth hover effect */
+    border-left: 2px solid #dddddd;
+}
+
+/* Simple hover effect for the button */
+.Search button:hover {
+    background-color: #e9ad1c;         /* Flips colors on hover */
+    color: #fff;
+}
+/* --- End of Search Bar Styling --- */
+
 /* This is the end of the nav */
 
 /* This is the end of the Header */
@@ -120,9 +169,9 @@ a:link {
                 /* This is the start of the first paragraph */
 
 .begin-journey { /* dark blue section for "BEGIN YOUR JOURNEY" */
-    background-color: #0a2540; /* deep blue background like the screenshot */
+    background-color: #002d68; /* deep blue background like the screenshot */
     color: white; /* white text for good contrast */
-    padding: 300px 60px; /* big top/bottom and side spacing */
+    padding: 80px 60px; /* big top/bottom and side spacing */
 }
 
 .journey-wrapper { /* container that puts picture and text side-by-side */
@@ -135,20 +184,22 @@ a:link {
 
 
 .section-label{
-    color: #f4c300;
+    color: #e9ad1c;
     font-weight: bold;
 }
 
 .journey-image img { /* styles the unicorn picture */
     width: 100%; /* fills its box */
-    max-width: 420px; /* limits picture size */
+    max-width: 610px; /* limits picture size */
     border-radius: 20px; /* rounded corners */ 
+
 }
 
 .journey-text h2 { /* main heading "Tiny Legends Big Hearts" */
     font-size: 2.8rem; /* large title size */
     margin-bottom: 20px; /* space below title */
     font-weight: bold;
+    line-height: 28px;
 }
 
 .journey-text p {
@@ -157,13 +208,15 @@ a:link {
 }
 
 .journey-text button { /* "Cradle a Legend" button */
-    background: #00d4ff; /* bright teal color */
+    background: #15d5f5; /* bright teal color */
     color: white; /* white text */
     border: none; /* no border */
     padding: 16px 40px; /* button size */
-    border-radius: 30px; /* rounded pill shape */
+    border-radius: 12px; /* rounded pill shape */
     font-size: 1.3rem; /* button text size */
     cursor: pointer; /* hand cursor on hover */
+    font-weight: 900;
+    margin-top: 35px;
 }
  
             /* This is the End of the first paragraph */
@@ -188,16 +241,16 @@ a:link {
 }
 
 .section-label2{
-    color: #f4c300;
+    color: #e9ad1c;
     font-weight: bold;
 }
 
 .cradle-image img { /* styles the phoenix picture */
     width: 100%; /* fills its box */
-    max-width: 420px; /* limits picture size */
+    max-width: 560px; /* limits picture size */
     border-radius: 20px; /* rounded corners */
     position: relative;
-    
+
 }
 
 .cradle-text h2 { /* main heading "A Sanctuary Where Mythical Creatures Find Families" */
@@ -223,7 +276,7 @@ a:link {
 /* ====================== PAST FRIENDS SECTION - start ====================== */
 /* This is the big dark blue section called "LOOKING IN ON PAST FRIENDS" */
 .past-friends {
-    background-color: #0a2540;
+    background-color: #002d68;
     color: white;
     padding: 100px 60px;
 }
@@ -236,10 +289,10 @@ a:link {
 
 /* This holds the yellow label "LOOKING IN ON PAST FRIENDS" */
 .section-label3 {
-    color: #f4c300;
+    color: #e9ad1c;
     font-weight: bold;
     font-size: 1.1rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 /* This is the main heading "From Cradle To Family: A Legend At Home" */
@@ -248,7 +301,7 @@ a:link {
     margin-bottom: 50px;
     font-weight: bold;
     color: white;
-    line-height: 20px;
+    line-height: 26px;
 }
 
 /* This grid holds the four success story creatures side-by-side */
@@ -304,11 +357,11 @@ a:link {
 
 /* This is the "Cradle a Legend" button at the bottom of the past friends section */
 .cradle-btn {
-    background: #00d4ff;
+    background: #15d5f5;
     color: white;
     border: none;
     padding: 16px 40px;
-    border-radius: 20px;
+    border-radius: 12px;
     font-size: 1.3rem;
     cursor: pointer;
     margin: 0 auto;
@@ -319,84 +372,89 @@ a:link {
 
 /* ====================== FOOTER - start ====================== */
 /* This is the full site footer with logo, company links and social media icons */
+
 .site-footer {
-    background-color: #f8f9fa;
-    padding: 60px 60px 30px;
-    color: #333;
+    background-color: #ffffff;          /* very light gray background to clearly separate footer from page */
+    padding: 60px 60px 30px;            /* big breathing space at top and sides (60px), tighter at bottom (30px) */
+    color: #333;                        /* sets default dark gray text color for the entire footer */
 }
 
 .footer-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 40px;
+    max-width: 1200px;                  /* caps the content width at 1200px for readability on wide screens */
+    margin: 0 auto;                     /* centers the wrapper perfectly in the middle of the page */
+    display: flex;                      /* activates flexbox so columns can be arranged easily */
+    justify-content: space-between;     /* spreads columns: logo pushed left, social pushed right */
+    align-items: flex-start;            /* keeps all columns aligned neatly at their top edges */
+    flex-wrap: wrap;                    /* makes columns stack vertically when screen gets too narrow */
+    gap: 40px;                          /* adds consistent 40px spacing between every column */
 }
 
 /* Left column - logo and tagline */
 .footer-logo img {
-    margin-bottom: 10px;
+    margin-bottom: 10px;                /* creates a small cushion of space below the logo */
+    
 }
 
 .footer-logo p {
-    font-size: 1.1rem;
-    max-width: 280px;
+    font-size: 1.1rem;                  /* makes tagline text slightly larger and more noticeable */
+    max-width: 280px;                   /* limits width so tagline wraps nicely into 2–3 readable lines */
+    word-spacing: -1px;
 }
 
 /* Middle column - Company links */
 .footer-company h4,
 .footer-social h4 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+    font-size: 1.2rem;                  /* gives section titles a clear, prominent size */
+    margin-bottom: 37px;                /* adds space underneath headings before lists/icons start */
     color: #0a2540;
+    font-weight: bold;                     /* uses dark navy blue for a professional, branded look */
 }
 
 .footer-company ul {
-    list-style: none;
-    padding: 0;
+    list-style: none;                   /* removes default bullet points */
+    padding: 0;                         /* eliminates default left indentation */
 }
 
 .footer-company li {
-    margin-bottom: 8px;
+    margin-bottom: 15px;                 /* adds small vertical spacing between links */
+    font-size: 17px;
 }
 
 .footer-company a {
-    color: #333;
-    text-decoration: none;
-    transition: color 0.2s;
+    color: #333;                        /* dark gray text color */
+    text-decoration: none;              /* removes underlines for a cleaner look */
+    transition: color 0.2s;             /* sets up smooth color change when hovering */
 }
 
 .footer-company a:hover {
-    color: #00d4ff;
+    color: #15d5f5;                     /* turns bright cyan for strong, modern hover feedback */
 }
 
 /* Right column - Social Media Links */
 .social-icons {
-    display: flex;
-    gap: 15px;
+    display: flex;                      /* arranges icons horizontally in a neat row */
+    gap: 13px;                          /* puts 15px space between each icon */
 }
 
 .social-icons img {
-    transition: transform 0.2s;
+    transition: transform 0.2s;         /* enables smooth 0.2-second scaling animation */
 }
 
 .social-icons a:hover img {
-    transform: scale(1.15);
+    transform: scale(1.15);             /* makes icon grow 15% bigger for a nice pop effect */
 }
 
 /* Bottom bar with copyright and links */
 .footer-bottom {
-    max-width: 1200px;
-    margin: 40px auto 0;
-    padding-top: 20px;
-    border-top: 1px solid #ddd;
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.9rem;
-    flex-wrap: wrap;
-    gap: 10px;
+    max-width: 1200px;                  /* keeps same max width as the rest of footer */
+    margin: 40px auto 0;                /* adds 40px space above + centers the bar */
+    padding-top: 20px;                  /* gives inner top padding inside the bar */
+    border-top: 1px solid #ddd;         /* draws a thin light-gray line as visual separator */
+    display: flex;                      /* sets up left ↔ right flex layout */
+    justify-content: space-between;     /* pushes copyright text left, links right */
+    font-size: 0.9rem;                  /* uses smaller text size for legal/copyright content */
+    flex-wrap: wrap;                    /* allows items to stack on very small screens */
+    gap: 10px;                          /* adds small spacing between copyright and links */
 }
 
 /* ====================== FOOTER - end ====================== */
