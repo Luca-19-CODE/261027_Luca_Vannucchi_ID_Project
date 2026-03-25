@@ -1,227 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="templete, initial setup, html, css, link, futureUse">
     <meta name="author" content="Luca Vannucchi 261027">
-    
+
     <title>Index</title>
 
     <link rel="stylesheet" href="/CSS/Main.css">
-                <!-- Google font -->
+    <!-- Google font -->
     <link rel="preconnect" href="http://fonts.googleapis.com">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- google font search button -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=shopping_basket" />
 
-    </head>
+</head>
+
 <body>
-<!-- Header - start -->
-<header class="HeaderImage">
-    
-    
-    <!-- navbar - start -->
-    <nav class="navbar">
-        <!-- Start Logo -->
-        <div class="logo">
-           <img src="../Assets/IMG/logo.png"  width="100px">
-        </div>
-        <!-- End Logo -->
+    <!-- Header - start -->
+<div class="HeaderImage">
 
-        <!-- Start of navbar Page Links -->
-        <div class="navLinks">
-            <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="../Pages/About.html">About</a></li>
-            <li><a href="../Pages/Contact.html">Contact</a></li>
-            </ul>
-        </div>
-        <!-- End of navbar Page Links -->
+    
+        <!-- navbar - start -->
+        <nav class="navbar">
             
-        <!-- Start Search Bar -->
-        <div class="Search">
-            <input type="text" placeholder="Search">
-            <button type="submit"> GO </button>
-        </div>
-        <!-- End Search Bar -->
+                <!-- Start Logo -->
+                <div class="logo">
+                    <img src="../Assets/IMG/logo.png" width="100px">
+                </div>
+                <!-- End Logo -->
 
-    </nav>
-    <!-- navbar - end -->
-    
-    <!-- Header Image - start -->
-    <div class="ImageFace">
-        <img src="../Assets/IMG/homeImg1.png">
-    </div>
-    <!-- Header Image - end -->
+                <!-- Start of navbar Page Links -->
+                <div class="navLinks">
+                    <div class="menu">
+                        <a href="#" >Home</a>
+                        <a href="../Pages/About.html">About</a>
+                        <a href="../Pages/Contact.html">Contact</a>
+                    </div>
+                </div>
+                <!-- End of navbar Page Links -->
+
+                <!-- Start Search Bar -->
+                <div class="Search">
+                    <input type="text" placeholder="Search">
+                    <button type="submit">
+                        <span class="material-symbols-outlined">
+                            shopping_basket
+                        </span>
+                    </button>
+                </div>
+                <!-- End Search Bar -->
+            
+         </nav>
+         
+         <div class="ImageFace">
+            <img src="../Assets/IMG/homeImg1.png">
+        </div>
+        <section class="hero">
+            <h1>The Mythos Cradle</h1>
+            <p>Where legends become loved ones</p>
+        </section>
+</div>
+        <!-- navbar - end -->
+
+        <!-- Header Image - start -->
+        
+        <!-- Header Image - end -->
 
         <!-- Hero section - start -->
-    <section class="hero">
-        <h1>The Mythos Cradle</h1>
-        <p>Where legends become loved ones</p>
+        
+        <!-- Hero section - end -->
+    </header>
+    <!-- Header - end -->
+
+
     </section>
-    <!-- Hero section - end -->
-</header>
-<!-- Header - end -->
 
-
-</section>
-
-<section class="begin-journey"> <!-- This is the big dark blue section called "BEGIN YOUR JOURNEY" -->
-    <div class="journey-wrapper"> <!-- This box holds the picture and the text side-by-side -->
-        <div class="journey-image"> <!-- This holds the unicorn picture on the left side -->
-            <div id="carouselExample" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="../Assets/IMG/imageSlider1.png" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+    <section class="begin-journey"> <!-- This is the big dark blue section called "BEGIN YOUR JOURNEY" -->
+        <div class="journey-wrapper"> <!-- This box holds the picture and the text side-by-side -->
+            <div class="journey-image"> <!-- This holds the unicorn picture on the left side -->
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../Assets/IMG/imageSlider1.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="journey-text"> <!-- This holds all the writing and button on the right side -->
+                <span class="section-label">BEGIN YOUR JOURNEY</span>
+                <h2>
+                    <br>Tiny Legends<br>
+                    <br>Big Hearts<br>
+                </h2>
+                <p>
+                    <br>Begin your journey into legend: tiny dragons,<br> <br>shimmering pegasi, mischievous kitsune,
+                    and<br>
+                    <br>watchful basilisks are ready to meet their families.<br>
+                    <br>Delight in enchanted encounters, gentle care, and<br> <br>joyful playtime. Heartwarming bonds
+                    await as these<br> <br>legendary creatures find their forever homes.<br>
+                </p>
+                <button>Cradle a Legend</button>
+            </div>
         </div>
-        <div class="journey-text"> <!-- This holds all the writing and button on the right side -->
-            <span class="section-label">BEGIN YOUR JOURNEY</span>
-            <h2>
-            <br>Tiny Legends<br>
-            <br>Big Hearts<br>
-            </h2>
-            <p>
-            <br>Begin your journey into legend: tiny dragons,<br> <br>shimmering pegasi, mischievous kitsune, and<br> 
-            <br>watchful basilisks are ready to meet their families.<br> 
-            <br>Delight in enchanted encounters, gentle care, and<br> <br>joyful playtime. Heartwarming bonds await as these<br> <br>legendary creatures find their forever homes.<br>
-            </p>
-            <button>Cradle a Legend</button>
-        </div>
-    </div>
-</section>
+    </section>
 
     <section class="the-cradle"> <!-- white section for "THE CRADLE" (text left + image right) -->
-    <div class="cradle-wrapper"> <!-- flex container that puts text and image side-by-side -->
-        <div class="cradle-text"> <!-- left side: all the text and heading -->
-            <span class="section-label2">THE CRADLE</span>
-            <h2>
-            <br>A Sanctuary Where Mythical<br> 
-            <br>Creatures Find Families<br>
-            </h2>
-            <p>
-            <br>Discover our carefully nurtured mythical creatures,<br> <br>each ready to join a loving family. Experience the<br> <br>joy and wonder of forming a lasting bond, as every<br> <br>adoption is guided with care, ensuring a safe,<br> <br>ethical, and heartwarming journey for both<br> 
-            <br>creature and caretaker.<br>
-            </p>
+        <div class="cradle-wrapper"> <!-- flex container that puts text and image side-by-side -->
+            <div class="cradle-text"> <!-- left side: all the text and heading -->
+                <span class="section-label2">THE CRADLE</span>
+                <h2>
+                    <br>A Sanctuary Where Mythical<br>
+                    <br>Creatures Find Families<br>
+                </h2>
+                <p>
+                    <br>Discover our carefully nurtured mythical creatures,<br> <br>each ready to join a loving family.
+                    Experience the<br> <br>joy and wonder of forming a lasting bond, as every<br> <br>adoption is guided
+                    with care, ensuring a safe,<br> <br>ethical, and heartwarming journey for both<br>
+                    <br>creature and caretaker.<br>
+                </p>
+            </div>
+            <div class="cradle-image"> <!-- right side: the phoenix picture -->
+                <img src="../Assets/IMG/homeImg1.png" alt="Phoenix">
+            </div>
         </div>
-        <div class="cradle-image"> <!-- right side: the phoenix picture -->
-            <img src="../Assets/IMG/homeImg1.png" alt="Phoenix">
-        </div>
-    </div>
-</section>
+    </section>
 
     <!-- ADD THIS ENTIRE SECTION RIGHT AFTER the closing </section> of your .the-cradle section 
      (before footer) -->
-<!-- ADD THIS ENTIRE SECTION RIGHT AFTER the closing </section> of your .the-cradle section 
+    <!-- ADD THIS ENTIRE SECTION RIGHT AFTER the closing </section> of your .the-cradle section 
      (before footer) -->
-<!-- Past friends section - start -->
-<!-- This is the big dark blue section called "LOOKING IN ON PAST FRIENDS" -->
-<section class="past-friends">
-    <div class="past-wrapper"> <!-- This box holds the title, the creatures grid and the button centered -->
-        <span class="section-label3">LOOKING IN ON PAST FRIENDS</span>
-        <h2>
-            <br>From Cradle To Family: A<br> 
-            <br>Legend At Home<br>
-        </h2>
-        
-        <div class="creatures-grid"> <!-- This grid holds the four success story cards side-by-side -->
-            <!-- Card 1 - Percy -->
-            <div class="creature-card">
-                <img src="../Assets/IMG/successImg1.png" alt="Percy’s Quiet Winter Days" class="creature-img">
-                <h3>
-                <br>Percy’s Quiet Winter<br> 
-                <BR>Days<br>
-                </h3>
-                <p>Explore red deserts, ancient relics.<br>Once shy in the cold, Percy now explores snowy peaks wrapped in warmth, curiosity, and family love.</p>
+    <!-- Past friends section - start -->
+    <!-- This is the big dark blue section called "LOOKING IN ON PAST FRIENDS" -->
+    <section class="past-friends">
+        <div class="past-wrapper"> <!-- This box holds the title, the creatures grid and the button centered -->
+            <span class="section-label3">LOOKING IN ON PAST FRIENDS</span>
+            <h2>
+                <br>From Cradle To Family: A<br>
+                <br>Legend At Home<br>
+            </h2>
+
+            <div class="creatures-grid"> <!-- This grid holds the four success story cards side-by-side -->
+                <!-- Card 1 - Percy -->
+                <div class="creature-card">
+                    <img src="../Assets/IMG/successImg1.png" alt="Percy’s Quiet Winter Days" class="creature-img">
+                    <h3>
+                        <br>Percy’s Quiet Winter<br>
+                        <BR>Days<br>
+                    </h3>
+                    <p>Explore red deserts, ancient relics.<br>Once shy in the cold, Percy now explores snowy peaks
+                        wrapped in warmth, curiosity, and family love.</p>
+                </div>
+
+                <!-- Card 2 - Ripple -->
+                <div class="creature-card">
+                    <img src="../Assets/IMG//successImg2.png" alt="Ripple’s Gentle River Home" class="creature-img">
+                    <h3>
+                        <br>Ripple’s Gentle River<br>
+                        <br>Home<br>
+                    </h3>
+                    <p>Gentle Ripple has found peace along flowing waters, bonded closely with a family who treasures
+                        calm and care.</p>
+                </div>
+
+                <!-- Card 3 - Atlas -->
+                <div class="creature-card">
+                    <img src="../Assets/IMG/successImg3.png" alt="Atlas Learns to Trust" class="creature-img">
+                    <h3>
+                        <br>Atlas Learns to<br>
+                        <br>Trust<br>
+                    </h3>
+                    <p>Brave little Atlas grows stronger each day, learning trust and courage in a home filled with
+                        patience.</p>
+                </div>
+
+                <!-- Card 4 - Skye -->
+                <div class="creature-card">
+                    <img src="../Assets/IMG/successImg4.png" alt="Skye’s First Open Skies" class="creature-img">
+                    <h3>
+                        <br>Skye’s First Open<br>
+                        <br>Skies<br>
+                    </h3>
+                    <p>Skye’s wings stretch freely at last, soaring happily above a home where wonder is always welcome.
+                    </p>
+                </div>
             </div>
 
-            <!-- Card 2 - Ripple -->
-            <div class="creature-card">
-                <img src="../Assets/IMG//successImg2.png" alt="Ripple’s Gentle River Home" class="creature-img">
-                <h3>
-                <br>Ripple’s Gentle River<br>
-                <br>Home<br>
-                </h3>
-                <p>Gentle Ripple has found peace along flowing waters, bonded closely with a family who treasures calm and care.</p>
+            <button class="cradle-btn">Cradle a Legend</button>
+        </div>
+    </section>
+    <!-- Past friends section - end -->
+
+
+    <!-- Start of footer -->
+    <!-- This is the full site footer with logo, company links and social media icons -->
+    <!-- REPLACE your current simple footer with this one (or just add the new parts if you prefer) -->
+    <footer class="site-footer">
+        <div class="footer-wrapper"> <!-- flex container that puts logo, company links and social icons side-by-side -->
+            <!-- Left: Logo + tagline -->
+            <div class="footer-logo">
+                <img src="../Assets/IMG/logo.png" alt="The Mythos Cradle" width="270">
+                <p>Where every legendary creature finds a loving home.+</p>
             </div>
 
-            <!-- Card 3 - Atlas -->
-            <div class="creature-card">
-                <img src="../Assets/IMG/successImg3.png" alt="Atlas Learns to Trust" class="creature-img">
-                <h3>
-                <br>Atlas Learns to<br>
-                <br>Trust<br>
-                </h3>
-                <p>Brave little Atlas grows stronger each day, learning trust and courage in a home filled with patience.</p>
+            <!-- Middle: Company links -->
+            <div class="footer-company">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="../Pages/About.html">Adopt</a></li>
+                    <li><a href="../Pages/Contact.html">Contact Us</a></li>
+                </ul>
             </div>
 
-            <!-- Card 4 - Skye -->
-            <div class="creature-card">
-                <img src="../Assets/IMG/successImg4.png" alt="Skye’s First Open Skies" class="creature-img">
-                <h3>
-                <br>Skye’s First Open<br>
-                <br>Skies<br>
-                </h3>
-                <p>Skye’s wings stretch freely at last, soaring happily above a home where wonder is always welcome.</p>
+            <!-- Right: Social icons -->
+            <div class="footer-social">
+                <h4>Social Media Links</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="../Assets/IMG/sm1.png" alt="Facebook" width="75"></a>
+                    <a href="#"><img src="../Assets/IMG/sm2.png" alt="TikTok" width="75"></a>
+                    <a href="#"><img src="../Assets/IMG/sm3.png" alt="Instagram" width="75"></a>
+                    <a href="#"><img src="../Assets/IMG/sm4.png" alt="X" width="75"></a>
+                </div>
             </div>
         </div>
-
-        <button class="cradle-btn">Cradle a Legend</button>
-    </div>
-</section>
-<!-- Past friends section - end -->
-
-
-<!-- Start of footer -->
-<!-- This is the full site footer with logo, company links and social media icons -->
-<!-- REPLACE your current simple footer with this one (or just add the new parts if you prefer) -->
-<footer class="site-footer">
-    <div class="footer-wrapper"> <!-- flex container that puts logo, company links and social icons side-by-side -->
-        <!-- Left: Logo + tagline -->
-        <div class="footer-logo">
-            <img src="../Assets/IMG/logo.png" alt="The Mythos Cradle" width="270">
-            <p>Where every legendary creature finds a loving home.+</p>
+        <div class="footer-bottom">
+            <p>All Rights Reserved @ Open Window 2024</p>
+            <p>Terms & Conditions | Privacy & Policy</p>
         </div>
-
-        <!-- Middle: Company links -->
-        <div class="footer-company">
-            <h4>Company</h4>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="../Pages/About.html">Adopt</a></li>
-                <li><a href="../Pages/Contact.html">Contact Us</a></li>
-            </ul>
-        </div>
-
-        <!-- Right: Social icons -->
-        <div class="footer-social">
-            <h4>Social Media Links</h4>
-            <div class="social-icons">
-                <a href="#"><img src="../Assets/IMG/sm1.png" alt="Facebook" width="75"></a>
-                <a href="#"><img src="../Assets/IMG/sm2.png" alt="TikTok" width="75"></a>
-                <a href="#"><img src="../Assets/IMG/sm3.png" alt="Instagram" width="75"></a>
-                <a href="#"><img src="../Assets/IMG/sm4.png" alt="X" width="75"></a>
-            </div>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>All Rights Reserved @ Open Window 2024</p>
-        <p>Terms & Conditions | Privacy & Policy</p>
-    </div>
-</footer>
-<!-- end of footer -->
+    </footer>
+    <!-- end of footer -->
 </body>
+
 </html>
 <!-- end of code -->

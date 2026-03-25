@@ -22,6 +22,7 @@ h1,h2,h3,h4,h5,h6{
     background-size: cover;     /*  "stretch picture to fill whole box, cut edges if needed" */
     background-position: center;/*  "try to show the middle of the picture" */
     background-repeat: no-repeat; /*  "don't copy-paste the picture many times" */
+    margin-bottom: 0;
 }
 
 .ImageFace {
@@ -29,14 +30,15 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .hero {
-    position: absolute;          /* Positions the hero text block on top of the header background */
-    top: 35%;                    /* Places it about 1/3 down from the top of the header */
-    right: 8%;                   /* Aligns the text block to the right side (like in your screenshot) */
+    position: relative;          /* Positions the hero text block on top of the header background */
+    top: 40vh;                    /* Places it about 1/3 down from the top of the header */
+    left: 117vh;                   /* Aligns the text block to the right side (like in your screenshot) */
     transform: none;             /* Removes any previous centering transform */
     text-align: left;            /* Makes text start from the left edge inside its box */
     max-width: 520px;            /* Prevents the text from becoming too wide on large screens */
     color: #ffffff;              /* White text color – good contrast on dark background */
-    z-index: 10;                 /* Ensures text stays above other overlapping elements */
+                /* Ensures text stays above other overlapping elements */
+
 }
 
 .hero h1 {
@@ -56,26 +58,33 @@ h1,h2,h3,h4,h5,h6{
     /* Removed margin-left:110px – now the subtitle sits cleanly under the title */
 }
 
-/* This is the Start of the nav */
+
+
+
+
+
 
 .navbar {
-    display: flex;                    /* Uses flexbox to arrange logo + links + search horizontally */
-    flex-direction: row;              /* Items go left to right */
-    justify-content: space-between;   /* Pushes logo left, links center-ish, search right */
-    align-items: center;              /* Vertically centers everything in the bar */
-
-    padding: 0px 40px;                /* Inner spacing left & right */
-    background-color: rgba(255, 255, 255, 0.651);  /* Semi-transparent white – glass-like effect */
-    border-radius: 30px;              /* Rounded corners */
-    height: 75px;                     /* Fixed height of the navbar */
-    width: 90%;                       /* Slightly narrower than full width */
-    margin-top: 30px;
-    margin-left: auto;
-    margin-top: 20px;
-    margin-right: auto;               /* Centers the navbar horizontally */
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    width: auto;
+    margin: 30px;           
+     background-color: rgba(255, 255, 255, 0.651);
+    top: 20px;
+    position: absolute;
     
+     border-radius: 30px;
+  
 }
+.Nav-content{
+    display: flex;                    /* Uses flexbox to arrange logo + links + search horizontally */
+    justify-content: space-between;   /* Pushes logo left, links center-ish, search right */
+    align-items: center;  
+              /* Vertically centers everything in the bar */
 
+}
 .logo img {
     width: 250px;                     /* Large logo size */
     height: auto;                     /* Keeps original proportions */
@@ -83,41 +92,39 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .menu {
-    width: 50%;                       /* Takes half the available space */
+                          /* Takes half the available space */
     display: flex;
-    justify-content: center;          /* Centers the menu items horizontally */
-    list-style: none;                 /* Removes bullet points */
+    justify-content: center;         /* Centers the menu items horizontally */                /* Removes bullet points */
     align-items: center;
-    gap: 15%;                         /* Space between each menu link */
+    gap: 10px;          
+       
+    
+              /* Space between each menu link */
 }
 
-.menu li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    list-style: none;                 /* Extra safety – no bullets */
-    flex-direction: row;
-}
 
 .navLinks li a {
     font-size: 20px;                  /* Large, readable link text */
-    text-decoration: none;            /* No underline by default */
+               /* No underline by default */
     color: rgb(0, 0, 0);              /* Black text */
     font-weight: 400;                 /* Normal weight */
     align-items: center;
     transition: 0.2s;                 /* Smooth change on hover */
 }
 
-li a:hover {
+
+
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
     color: aqua;                      /* Changes to cyan on hover */
     font-size: 18px;                  /* Slightly smaller – playful effect */
 }
 
-a:link {
-    text-decoration: none;
-    color: black;
-}
+
 
 /* Container for the search bar */
 /* --- Search Bar Styling --- */
@@ -129,7 +136,9 @@ a:link {
     border:none;       /* Thin black border to match PDF */
     border-radius: 5px;             /* Slightly rounded corners */
     padding: 2px 5px;               /* Spacing inside the bar */
-    height: 38px;                   /* Fixed height for the bar */
+    height: 38px;         
+    
+            /* Fixed height for the bar */
 }
 
 /* Styles the text typing area */
@@ -139,8 +148,9 @@ a:link {
     padding: 5px 10px;              /* Space for the text inside */
     font-size: 16px;                /* Clear, readable font size */
     width: 180px;                   /* Sets the width of the typing area */
-    background: transparent;        /* Lets the white container show through */
-}
+    background: transparent;   
+    }    /* Lets the white container show through */
+/*  refer */
 
 /* Styles the "GO" button inside the bar */
 .Search button {
