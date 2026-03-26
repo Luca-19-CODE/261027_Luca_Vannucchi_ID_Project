@@ -22,9 +22,9 @@ h1, h2, h3, h4, h5, h6 {
 /* ==================== HEADER START ==================== */
 
 .HeaderImage {
-    height: 100vh;                                  /* Full screen height */
+    height: 42vh;                                  /* Full screen height */
     position: relative;                             /* For positioning child elements */
-    background-image: url("../Assets/IMG/homeHeader.png"); /* Background image */
+    background-image: url("../Assets/IMG/contactHeader.png"); /* Background image */
     background-size: cover;                         /* Cover entire area */
     background-position: center;                    /* Center the image */
     background-repeat: no-repeat;                   /* No tiling */
@@ -37,8 +37,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero {
     position: relative;                             /* Position hero text freely */
-    top: 40vh;                                      /* Move down from top */
-    left: 117vh;                                    /* Move to the right side */
+    top: 7vh;                                      /* Move down from top */
+    left: 70vh;                                    /* Move to the right side */
     transform: none;                                /* No centering transform */
     text-align: left;                               /* Left aligned text */
     max-width: 520px;                               /* Control text width */
@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero h1 {
     font-family: "TitleFont", sans-serif;           /* Custom title font */
     font-size: 90px;                                /* Large title size */
-    color: #e9ad1c;                                 /* Gold color */
+    color: #ffffff;                                 /* Gold color */
     margin-bottom: 10px;                            /* Space below title */
     letter-spacing: 3px;                            /* Letter spacing */
     line-height: 100px;                             /* Tight line height */
@@ -152,212 +152,172 @@ a:hover {
 /* ==================== HEADER END ==================== */
 
 
-/* ==================== BEGIN YOUR JOURNEY SECTION START ==================== */
 
-.begin-journey {
-    background-color: #002d68;                      /* Deep blue background */
-    color: white;                                   /* White text */
-    padding: 80px 60px;                             /* Section spacing */
+/*--==================== ABOUT SECTION START ==================== */
+/* ==================== ABOUT SECTION ==================== */
+
+.about-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-/* Side-by-side container */
-.journey-wrapper {
-    display: flex;                                  /* Image and text side by side */
-    align-items: center;                            /* Vertical alignment */
-    gap: 60px;                                      /* Space between them */
-    max-width: 1200px;                              /* Max width */
-    margin: 0 auto;                                 /* Center section */
+.about-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-/* Section label */
-.section-label {
-    color: #e9ad1c;                                 /* Gold color */
-    font-weight: bold;
-}
-
-/* Journey image */
-.journey-image img {
-    width: 100%;
-    max-width: 610px;
-    border-radius: 20px;                            /* Rounded image */
-}
-
-/* Journey heading */
-.journey-text h2 {
-    font-size: 2.8rem;                              /* Large heading */
-    margin-bottom: 20px;
-    font-weight: bold;
-    line-height: 28px;
-}
-
-/* Journey paragraph */
-.journey-text p {
-    line-height: 15px;
-    font-size: 20px;
-}
-
-/* Journey button */
-.journey-text button {
-    background: #15d5f5;                            /* Teal button */
-    color: white;
-    border: none;
-    padding: 16px 40px;
-    border-radius: 12px;
-    font-size: 1.3rem;
-    cursor: pointer;
-    font-weight: 900;
-    margin-top: 35px;
-}
-
-/* ==================== BEGIN YOUR JOURNEY SECTION END ==================== */
-
-
-/* ==================== THE CRADLE SECTION START ==================== */
-
-.the-cradle {
-    background-color: #ffffff;                      /* White background */
-    padding: 90px 60px;
-}
-
-/* Text and image container */
-.cradle-wrapper {
+.about-row {
     display: flex;
     align-items: center;
-    gap: 80px;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-direction: row;                            /* Text left, image right */
+    gap: 40px;
 }
 
-/* Section label */
-.section-label2 {
-    color: #e9ad1c;
-    font-weight: bold;
+/* Left text */
+.about-text {
+    flex: 1;
 }
 
-/* Cradle image */
-.cradle-image img {
-    width: 100%;
-    max-width: 560px;
-    border-radius: 20px;
-    position: relative;
-}
-
-/* Cradle heading */
-.cradle-text h2 {
-    font-size: 2.6rem;
-    color: #0a2540;                                 /* Dark navy */
-    font-weight: bold;
-    line-height: 20px;
-}
-
-/* Cradle paragraph */
-.cradle-text p {
-    line-height: 15px;
-    font-size: 20px;
-}
-
-/* ==================== THE CRADLE SECTION END ==================== */
-
-
-/* ==================== PAST FRIENDS SECTION START ==================== */
-
-.past-friends {
-    background-color: #002d68;                      /* Dark blue background */
-    color: white;
-    padding: 100px 60px;
-}
-
-/* Centered content wrapper */
-.past-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
+/* Right image */
+.about-image {
+    flex: 1;
     text-align: center;
 }
 
-/* Section label */
-.section-label3 {
-    color: #e9ad1c;
-    font-weight: bold;
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-}
-
-/* Main heading */
-.past-wrapper h2 {
-    font-size: 2.6rem;
-    margin-bottom: 50px;
-    font-weight: bold;
-    color: white;
-    line-height: 26px;
-}
-
-/* Success stories grid */
-.creatures-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* Responsive grid */
-    gap: 40px;
-    margin-bottom: 50px;
-}
-
-/* Individual card */
-.creature-card {
-    background: transparent;
-    color: white;
-    box-shadow: none;
-    border-radius: 0;
-    padding: 0;
-    transition: transform 0.3s;
-}
-
-.creature-card:hover {
-    transform: translateY(-8px);                    /* Lift on hover */
-}
-
-/* Card image */
-.creature-img {
+.about-image img {
     width: 100%;
-    height: 220px;
-    object-fit: cover;
+    max-width: 400px;
+    border-radius: 12px;
+}
+
+/* Optional label */
+.section-label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #0a8cff;
+}
+
+
+/* ==================== CONTACT SECTION LAYOUT ==================== */
+
+.contact-section {
+    padding: 60px 0;
+}
+
+.contact-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contact-row {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Left + Right columns */
+.contact-left {
+    flex: 1;
+}
+
+.contact-right {
+    flex: 1.4;
+}
+
+/* ==================== TEXT SPACING ==================== */
+
+.small-spacing {
+    margin-bottom: 10px;
+}
+
+.medium-spacing {
+    margin-bottom: 20px;
+}
+
+.large-spacing {
+    margin-bottom: 40px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* ==================== SOCIAL ICONS ==================== */
+
+.social-icons a {
+    margin-right: 15px;
+}
+
+.social-icons img {
+    width: 60px;
+}
+
+/* ==================== MAP ==================== */
+
+.map {
+    width: 50%;
     border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-    display: block;
+    
+}
+
+/* ==================== FORM ==================== */
+
+.form-group {
     margin-bottom: 15px;
 }
 
-/* Card title */
-.creature-card h3 {
-    font-size: 1.35rem;
-    margin: 0 0 8px 0;
-    font-weight: bold;
+.form-group label {
+    display: block;
     color: white;
-    text-align: center;
-    line-height: 15px;
+    font-weight: 600;
+    margin-bottom: 6px;
 }
 
-/* Card description */
-.creature-card p {
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 20px;
+    background: rgba(255,255,255,0.95);
     font-size: 1rem;
-    line-height: 1.5;
-    color: #e0f0ff;
-    text-align: center;
-    padding: 0 10px;
 }
 
-/* Bottom button */
-.cradle-btn {
+/* ==================== BUTTON ==================== */
+
+.submit-button {
     background: #15d5f5;
     color: white;
     border: none;
-    padding: 16px 40px;
     border-radius: 12px;
-    font-size: 1.3rem;
-    cursor: pointer;
-    margin: 0 auto;
-    display: block;
+    padding: 16px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+    transition: 0.3s;
 }
 
-/* ==================== PAST FRIENDS SECTION END ==================== */
+.submit-button:hover {
+    background: #0a2540;
+    transform: translateY(-3px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ==================== FOOTER START ==================== */

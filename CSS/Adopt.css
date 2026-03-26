@@ -1,26 +1,3 @@
-/* ==================== GLOBAL STYLES START ==================== */
-
-body {
-    margin: 0;                                      /* Remove default browser margin */
-    background-color: rgb(254, 255, 255);           /* Light page background */
-    font-family: 'Poppins', sans-serif;             /* Main body font */
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;          /* Font for all headings */
-}
-
-/* Custom decorative font for titles */
-@font-face {
-    font-family: "TitleFont";
-    src: url("../Assets/Fonts/Mythology\ Of\ Egypt.otf");
-}
-
-/* ==================== GLOBAL STYLES END ==================== */
-
-
-/* ==================== HEADER START ==================== */
-
 .HeaderImage {
     height: 100vh;                                  /* Full screen height */
     position: relative;                             /* For positioning child elements */
@@ -152,212 +129,23 @@ a:hover {
 /* ==================== HEADER END ==================== */
 
 
-/* ==================== BEGIN YOUR JOURNEY SECTION START ==================== */
-
-.begin-journey {
-    background-color: #002d68;                      /* Deep blue background */
-    color: white;                                   /* White text */
-    padding: 80px 60px;                             /* Section spacing */
-}
-
-/* Side-by-side container */
-.journey-wrapper {
-    display: flex;                                  /* Image and text side by side */
-    align-items: center;                            /* Vertical alignment */
-    gap: 60px;                                      /* Space between them */
-    max-width: 1200px;                              /* Max width */
-    margin: 0 auto;                                 /* Center section */
-}
-
-/* Section label */
-.section-label {
-    color: #e9ad1c;                                 /* Gold color */
-    font-weight: bold;
-}
-
-/* Journey image */
-.journey-image img {
-    width: 100%;
-    max-width: 610px;
-    border-radius: 20px;                            /* Rounded image */
-}
-
-/* Journey heading */
-.journey-text h2 {
-    font-size: 2.8rem;                              /* Large heading */
-    margin-bottom: 20px;
-    font-weight: bold;
-    line-height: 28px;
-}
-
-/* Journey paragraph */
-.journey-text p {
-    line-height: 15px;
-    font-size: 20px;
-}
-
-/* Journey button */
-.journey-text button {
-    background: #15d5f5;                            /* Teal button */
-    color: white;
-    border: none;
-    padding: 16px 40px;
-    border-radius: 12px;
-    font-size: 1.3rem;
-    cursor: pointer;
-    font-weight: 900;
-    margin-top: 35px;
-}
-
-/* ==================== BEGIN YOUR JOURNEY SECTION END ==================== */
 
 
-/* ==================== THE CRADLE SECTION START ==================== */
-
-.the-cradle {
-    background-color: #ffffff;                      /* White background */
-    padding: 90px 60px;
-}
-
-/* Text and image container */
-.cradle-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 80px;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-direction: row;                            /* Text left, image right */
-}
-
-/* Section label */
-.section-label2 {
-    color: #e9ad1c;
-    font-weight: bold;
-}
-
-/* Cradle image */
-.cradle-image img {
-    width: 100%;
-    max-width: 560px;
-    border-radius: 20px;
-    position: relative;
-}
-
-/* Cradle heading */
-.cradle-text h2 {
-    font-size: 2.6rem;
-    color: #0a2540;                                 /* Dark navy */
-    font-weight: bold;
-    line-height: 20px;
-}
-
-/* Cradle paragraph */
-.cradle-text p {
-    line-height: 15px;
-    font-size: 20px;
-}
-
-/* ==================== THE CRADLE SECTION END ==================== */
 
 
-/* ==================== PAST FRIENDS SECTION START ==================== */
 
-.past-friends {
-    background-color: #002d68;                      /* Dark blue background */
-    color: white;
-    padding: 100px 60px;
-}
 
-/* Centered content wrapper */
-.past-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-}
 
-/* Section label */
-.section-label3 {
-    color: #e9ad1c;
-    font-weight: bold;
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-}
 
-/* Main heading */
-.past-wrapper h2 {
-    font-size: 2.6rem;
-    margin-bottom: 50px;
-    font-weight: bold;
-    color: white;
-    line-height: 26px;
-}
 
-/* Success stories grid */
-.creatures-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* Responsive grid */
-    gap: 40px;
-    margin-bottom: 50px;
-}
 
-/* Individual card */
-.creature-card {
-    background: transparent;
-    color: white;
-    box-shadow: none;
-    border-radius: 0;
-    padding: 0;
-    transition: transform 0.3s;
-}
 
-.creature-card:hover {
-    transform: translateY(-8px);                    /* Lift on hover */
-}
 
-/* Card image */
-.creature-img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-    display: block;
-    margin-bottom: 15px;
-}
 
-/* Card title */
-.creature-card h3 {
-    font-size: 1.35rem;
-    margin: 0 0 8px 0;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    line-height: 15px;
-}
 
-/* Card description */
-.creature-card p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #e0f0ff;
-    text-align: center;
-    padding: 0 10px;
-}
 
-/* Bottom button */
-.cradle-btn {
-    background: #15d5f5;
-    color: white;
-    border: none;
-    padding: 16px 40px;
-    border-radius: 12px;
-    font-size: 1.3rem;
-    cursor: pointer;
-    margin: 0 auto;
-    display: block;
-}
 
-/* ==================== PAST FRIENDS SECTION END ==================== */
+
 
 
 /* ==================== FOOTER START ==================== */
