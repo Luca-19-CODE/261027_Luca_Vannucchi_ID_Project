@@ -1,7 +1,25 @@
+body {
+    margin: 0;                                      /* Remove default browser margin */
+    background-color: rgb(254, 255, 255);           /* Light page background */
+    font-family: 'Poppins', sans-serif;             /* Main body font */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;          /* Font for all headings */
+}
+
+/* Custom decorative font for titles */
+@font-face {
+    font-family: "TitleFont";
+    src: url("../Assets/Fonts/Mythology\ Of\ Egypt.otf");
+
+}
+
+
 .HeaderImage {
-    height: 100vh;                                  /* Full screen height */
+    height: 50vh;                                  /* Full screen height */
     position: relative;                             /* For positioning child elements */
-    background-image: url("../Assets/IMG/homeHeader.png"); /* Background image */
+    background-image: url("../Assets/IMG/adoptHeader.png"); /* Background image */
     background-size: cover;                         /* Cover entire area */
     background-position: center;                    /* Center the image */
     background-repeat: no-repeat;                   /* No tiling */
@@ -14,8 +32,8 @@
 
 .hero {
     position: relative;                             /* Position hero text freely */
-    top: 40vh;                                      /* Move down from top */
-    left: 117vh;                                    /* Move to the right side */
+    top: 5vh;                                      /* Move down from top */
+    left: 75vh;                                    /* Move to the right side */
     transform: none;                                /* No centering transform */
     text-align: left;                               /* Left aligned text */
     max-width: 520px;                               /* Control text width */
@@ -26,7 +44,7 @@
 .hero h1 {
     font-family: "TitleFont", sans-serif;           /* Custom title font */
     font-size: 90px;                                /* Large title size */
-    color: #e9ad1c;                                 /* Gold color */
+    color: #ffffff;                                 /* Gold color */
     margin-bottom: 10px;                            /* Space below title */
     letter-spacing: 3px;                            /* Letter spacing */
     line-height: 100px;                             /* Tight line height */
