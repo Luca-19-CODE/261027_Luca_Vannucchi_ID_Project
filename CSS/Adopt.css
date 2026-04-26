@@ -262,7 +262,7 @@ a:hover {
 }
 
 .new-price{
-    font-weight: bold;
+    font-weight: 500;
     color: #888;
 }
 
@@ -270,14 +270,48 @@ a:hover {
     text-decoration: line-through;
     margin-left: 30px;
     color: #888;
+    font-weight: bold;
 }
 
 .Adoption-text p {
     line-height: 15px;
     font-size: 19px;
     font-weight: 400;
+    white-space: nowrap;
 }
 
+.Buttons-Adoption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.Amount-Selector {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background-color: #001f3f;
+    border-radius: 15px;
+    padding: 20px 35px;
+    margin-left: -170px;
+}
+
+.Minus{
+    color: white;
+    font-size: 35px;
+}
+
+.Value {
+    color: white;
+    font-size: 18px;
+    margin: 0 15px; 
+    font-weight: bold;
+}
+
+.Plus{
+    color: white;
+}
 
 .Adoption-text button {
     background: #15d5f5;                           
@@ -289,20 +323,9 @@ a:hover {
     cursor: pointer;
     font-weight: 900;
     margin-top: 5px;
-    margin-left: 160px;
 }
 
-.Adoption-line-1{
-    margin: 40px auto 0;                       
-    padding-top: 20px;                             
-    border-top: 1px solid #ddd;                  
-    display: flex;                              
-    justify-content: space-between;                
-    font-size: 0.9rem;                             
-    flex-wrap: wrap;                                
-    gap: 10px;    
-                                     
-}
+
 
 
 /* Adoption 1 */
