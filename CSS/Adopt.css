@@ -224,60 +224,63 @@ a:hover {
 /* Yellow Filter-Bar Ends */
 
 /* Adoption 1 */
-.begin-journey {
-    background-color: #002d68;                      /* Deep blue background */
-    color: white;                                   /* White text */
-    padding: 80px 60px;                             /* Section spacing */
+.Adoption-Start {
+    background-color: #ffffff;                     
+    color: rgb(0, 0, 0);                                  
+    padding: 80px 60px;                             
 }
 
-/* Side-by-side container */
-.journey-wrapper {
-    display: flex;                                  /* Image and text side by side */
-    align-items: center;                            /* Vertical alignment */
-    gap: 80px;                                      /* Space between them */
-    max-width: 1200px;                              /* Max width */
-    margin: 0 auto;                                 /* Center section */
+
+.Adoption-wrapper {
+    display: flex;                                
+    align-items: center;                         
+    gap: 80px;                                                                                             
 }
 
-/* Section label */
-.section-label {
-    color: #e9ad1c;                                 /* Gold color */
-    font-weight: bold;
-}
 
-/* Journey image */
-.journey-image img {
+.Adoption-image img {
     width: 100%;
     max-width: 610px;
-    border-radius: 20px;                            /* Rounded image */
+    border-radius: 20px;                           
 }
 
-/* Journey heading */
-.journey-text h2 {
-    font-size: 2.8rem;                              /* Large heading */
-    margin-bottom: 20px;
-    font-weight: bold;
-    line-height: 28px;
+.Adoption-Head-Text{
+    font-weight:650;
+    font-size: 45px;
+    letter-spacing: 2px;
 }
 
-/* Journey paragraph */
-.journey-text p {
+.Adoption-text p {
     line-height: 15px;
-    font-size: 20px;
+    font-size: 19px;
+    font-weight: 400;
 }
 
-/* Journey button */
-.journey-text button {
-    background: #15d5f5;                            /* Teal button */
+
+.Adoption-text button {
+    background: #15d5f5;                           
     color: white;
     border: none;
-    padding: 16px 40px;
+    padding: 20px 70px;
     border-radius: 12px;
     font-size: 1.3rem;
     cursor: pointer;
     font-weight: 900;
     margin-top: 35px;
 }
+
+.Adoption-line-1{
+    margin: 40px auto 0;                       
+    padding-top: 20px;                             
+    border-top: 1px solid #ddd;                  
+    display: flex;                              
+    justify-content: space-between;                
+    font-size: 0.9rem;                             
+    flex-wrap: wrap;                                
+    gap: 10px;    
+                                     
+}
+
 
 /* Adoption 1 */
 

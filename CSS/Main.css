@@ -440,7 +440,6 @@ a:hover {
 
 /* Footer bottom bar */
 .footer-bottom {
-    max-width: 1200px;                              /* Same width as main content */
     margin: 40px auto 0;                            /* Space above bottom bar */
     padding-top: 20px;                              /* Inner top padding */
     border-top: 1px solid #ddd;                     /* Thin separator line */
