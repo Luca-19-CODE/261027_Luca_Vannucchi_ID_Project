@@ -234,7 +234,8 @@ a:hover {
 .Adoption-wrapper {
     display: flex;                                
     align-items: center;                         
-    gap: 80px;                                                                                             
+    gap: 80px;  
+    margin-left: 100px;                                                                                           
 }
 
 
@@ -243,11 +244,32 @@ a:hover {
     max-width: 610px;
     border-radius: 20px;                           
 }
+.Adoption-text{
+    margin-top: -270px;
+    margin-left: 10px;
+}
 
-.Adoption-Head-Text{
-    font-weight:650;
+.Adoption-text h2{
+    margin-bottom: 10px;
+    font-weight:600;
     font-size: 45px;
     letter-spacing: 2px;
+}
+
+.price{
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.new-price{
+    font-weight: bold;
+    color: #888;
+}
+
+.old-price{
+    text-decoration: line-through;
+    margin-left: 30px;
+    color: #888;
 }
 
 .Adoption-text p {
@@ -266,7 +288,8 @@ a:hover {
     font-size: 1.3rem;
     cursor: pointer;
     font-weight: 900;
-    margin-top: 35px;
+    margin-top: 5px;
+    margin-left: 160px;
 }
 
 .Adoption-line-1{
@@ -360,7 +383,6 @@ a:hover {
 
 /* Footer bottom bar */
 .footer-bottom {
-    max-width: 1200px;                              /* Same width as main content */
     margin: 40px auto 0;                            /* Space above bottom bar */
     padding-top: 20px;                              /* Inner top padding */
     border-top: 1px solid #ddd;                     /* Thin separator line */
