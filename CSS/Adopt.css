@@ -245,7 +245,7 @@ a:hover {
     border-radius: 20px;                           
 }
 .Adoption-text{
-    margin-top: -270px;
+    margin-top: -70px;
     margin-left: 10px;
 }
 
@@ -288,29 +288,21 @@ a:hover {
 }
 
 .Amount-Selector {
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    background-color: #001f3f;
-    border-radius: 15px;
-    padding: 20px 35px;
-    margin-left: -170px;
+  display: flex;
+  align-items: center;
+  background: #1e3a8a;
+  color: white;
+  border-radius: 12px;
+  padding: 20px 16px;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: -200px;
 }
 
-.Minus{
-    color: white;
-    font-size: 35px;
-}
-
-.Value {
-    color: white;
-    font-size: 18px;
-    margin: 0 15px; 
-    font-weight: bold;
-}
-
-.Plus{
-    color: white;
+.Minus, .Plus {
+  cursor: pointer;
+  width: 32px;
+  text-align: center;
 }
 
 .Adoption-text button {
@@ -325,7 +317,26 @@ a:hover {
     margin-top: 5px;
 }
 
+.creature-specs {
+  margin-top: 30px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
 
+.spec-item {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.label {
+  font-weight: 600;
+  width: 100px;
+  color: #444;
+}
+
+.value {
+  color: #555;
+}
 
 
 /* Adoption 1 */
