@@ -17,16 +17,17 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .HeaderImage {
-    height: 50vh;                                  /* Full screen height */
-    position: relative;                             /* For positioning child elements */
-    background-image: url("../Assets/IMG/adoptHeader.png"); /* Background image */
-    background-size: cover;                         /* Cover entire area */
-    background-position: center;                    /* Center the image */
-    background-repeat: no-repeat;                   /* No tiling */
+    height: 50vh;                                
+    position: relative;                          
+    background-image: url("../Assets/IMG/adoptHeader.png"); 
+    background-size: cover;                       
+    background-position: center;                
+    background-repeat: no-repeat;                   
     margin-bottom: 0;
+    filter: blur();
 }
 
-/* ==================== NAVBAR START ==================== */
+ /* NAVBAR START */
 
 .navbar{
     display: flex;
@@ -57,55 +58,55 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu a{
-    text-decoration: none;                          /* No underline */
-    color: black;                                   /* Black text */
-    font-size: 20px;                                /* Large text */
+    text-decoration: none;                          
+    color: black;                                  
+    font-size: 20px;                               
     font-weight: 400;
     transition: 0.2s;
     font-style: bold;
 }
 
 a:hover {
-    color: aqua;                                    /* Cyan on hover */
+    color: aqua;                                   
     font-size: 18px; 
 }
 
 
 .hero {
-    position: relative;                             /* Position hero text freely */
-    top: 5vh;                                      /* Move down from top */
-    left: 75vh;                                    /* Move to the right side */
-    transform: none;                                /* No centering transform */
-    text-align: left;                               /* Left aligned text */
-    max-width: 520px;                               /* Control text width */
-    color: #ffffff;                                 /* White text */
+    position: relative;                          
+    top: 5vh;                                     
+    left: 75vh;                                   
+    transform: none;                                
+    text-align: left;                              
+    max-width: 520px;                            
+    color: #ffffff;                                
 }
 
 /* Hero title */
 .hero h1 {
-    font-family: "TitleFont", sans-serif;           /* Custom title font */
-    font-size: 90px;                                /* Large title size */
-    color: #ffffff;                                 /* Gold color */
-    margin-bottom: 10px;                            /* Space below title */
-    letter-spacing: 3px;                            /* Letter spacing */
-    line-height: 100px;                             /* Tight line height */
+    font-family: "TitleFont", sans-serif;          
+    font-size: 90px;                               
+    color: #ffffff;                             
+    margin-bottom: 10px;                           
+    letter-spacing: 3px;                       
+    line-height: 100px;                        
 }
 
 /* Hero subtitle */
 .hero p {
-    font-size: 1.6rem;                              /* Subtitle size */
-    font-weight: 500;                               /* Medium weight */
+    font-size: 1.6rem;                          
+    font-weight: 500;                             
     font-family: "poppins", sans-serif;
 }
 
-/* ==================== SEARCH BAR START ==================== */
+/* SEARCH BAR START */
 .Search {
-    display: flex;                                  /* Input and button together */
-    align-items: center;                            /* Vertical center */
-    background-color: white;                        /* White background */
+    display: flex;                                  
+    align-items: center;                            
+    background-color: white;                       
     border: none;
-    border-radius: 5px;                             /* Slight rounding */
-    padding: 2px 5px;                               /* Inner spacing */
+    border-radius: 5px;                             
+    padding: 2px 5px;                             
     height: 50px;
     width: 300px;
     margin-right: 50px;
@@ -113,11 +114,11 @@ a:hover {
 
 /* Search input */
 .Search input {
-    border: none;                                   /* Clean input */
-    outline: none;                                  /* No focus glow */
+    border: none;                               
+    outline: none;                                
     padding: 5px 10px;
     font-size: 16px;
-    width: 250px;                                   /* Input width */
+    width: 250px;                                 
     background: transparent;
 }
 
@@ -136,7 +137,7 @@ a:hover {
 
 /* Button hover */
 .Search button:hover {
-    background-color: #e9ad1c;                      /* Gold on hover */
+    background-color: #e9ad1c;     
     color: #fff;
 }
 
@@ -169,10 +170,6 @@ a:hover {
  font-size: 18px;
 }
 /* blue-Page Ends */
-
-
-
-
 /* SEARCH BAR END */
 /* NAVBAR END */
 /* HEADER END */
@@ -226,7 +223,7 @@ a:hover {
 /* Adoption 1 */
 .Adoption-Start {
     background-color: #ffffff;                     
-    color: rgb(0, 0, 0);                                  
+    color:black;                                
     padding: 80px 60px;                             
 }
 
@@ -249,7 +246,7 @@ a:hover {
     margin-left: 10px;
 }
 
-.Adoption-text h2{
+.Adoption-text h1{
     margin-bottom: 10px;
     font-weight:600;
     font-size: 45px;
@@ -271,6 +268,11 @@ a:hover {
     margin-left: 30px;
     color: #888;
     font-weight: bold;
+}
+
+.Parent-Stars{
+    display: flex;
+    flex-direction: row;
 }
 
 .Adoption-text p {
@@ -318,9 +320,11 @@ a:hover {
 }
 
 .creature-specs {
-  margin-top: 30px;
+  margin-top: 40px;
   border-top: 1px solid #eee;
   padding-top: 20px;
+  color: #a0a0a0;
+  font-weight: 600;
 }
 
 .spec-item {
@@ -331,11 +335,16 @@ a:hover {
 .label {
   font-weight: 600;
   width: 100px;
-  color: #444;
+  
+}
+
+.Symbol{
+margin-left: 20px;
 }
 
 .value {
-  color: #555;
+  margin-left: 20px;
+  white-space: nowrap;
 }
 
 
@@ -345,87 +354,83 @@ a:hover {
 /* FOOTER START */
 
 .site-footer {
-    background-color: #ffffff;                      /* White footer background */
-    padding: 60px 60px 30px;                        /* Large top padding, smaller bottom */
-    color: #333;                                    /* Dark text color */
+    background-color: #ffffff;                     
+    padding: 60px 60px 30px;                      
+    color: #333;                                 
 }
 
-/* Footer columns container */
 .footer-wrapper {
-    margin: 0 auto;                                 /* Center the footer content */
-    display: flex;                                  /* Logo | Links | Social side by side */
-    justify-content: space-between;                 /* Spread the three columns */
-    align-items: flex-start;                        /* Align columns at top */
-    flex-wrap: wrap;                                /* Stack on small screens */
-    gap: 40px;                                      /* Space between columns */
+    margin: 0 auto;                          
+    display: flex;                                
+    justify-content: space-between;                
+    align-items: flex-start;                       
+    flex-wrap: wrap;                                
+    gap: 40px;                                      
 }
 
-/* Logo and tagline */
 .footer-logo img {
-    margin-bottom: 10px;                            /* Space below logo */
+    margin-bottom: 10px;                       
 }
 
 .footer-logo p {
-    font-size: 1.1rem;                              /* Tagline text size */
-    max-width: 280px;                               /* Limit tagline width */
-    word-spacing: -1px;                             /* Adjust word spacing */
+    font-size: 1.1rem;                            
+    max-width: 280px;                            
+    word-spacing: -1px;                            
 }
 
-/* Footer section headings */
 .footer-company h4,
 .footer-social h4 {
-    font-size: 1.2rem;                              /* Heading size */
-    margin-bottom: 37px;                            /* Space below headings */
-    color: #0a2540;                                 /* Dark navy color */
-    font-weight: bold;                              /* Bold headings */
+    font-size: 1.2rem;                            
+    margin-bottom: 37px;                          
+    color: #0a2540;                                
+    font-weight: bold;                              
 }
 
-/* Company links list */
 .footer-company ul {
-    list-style: none;                               /* Remove bullet points */
-    padding: 0;                                     /* Remove default padding */
+    list-style: none;                              
+    padding: 0;                               
 }
 
 .footer-company li {
-    margin-bottom: 15px;                            /* Space between links */
-    font-size: 17px;                                /* Link text size */
+    margin-bottom: 15px;                            
+    font-size: 17px;                                
 }
 
 .footer-company a {
-    color: #333;                                    /* Link color */
-    text-decoration: none;                          /* No underline */
-    transition: color 0.2s;                         /* Smooth hover transition */
+    color: #333;                                    
+    text-decoration: none;                          
+    transition: color 0.2s;                      
 }
 
 .footer-company a:hover {
-    color: #15d5f5;                                 /* Teal color on hover */
+    color: #15d5f5;                                 
 }
 
-/* Social icons container */
+
 .social-icons {
-    display: flex;                                  /* Icons in a row */
-    gap: 13px;                                      /* Space between icons */
+    display: flex;                           
+    gap: 13px;                                      
 }
 
 .social-icons img {
-    transition: transform 0.2s;                     /* Smooth scale effect */
+    transition: transform 0.2s;                     
 }
 
 .social-icons a:hover img {
-    transform: scale(1.15);                         /* Grow icon on hover */
+    transform: scale(1.15);                       
 }
 
-/* Footer bottom bar */
+
 .footer-bottom {
-    margin: 40px auto 0;                            /* Space above bottom bar */
-    padding-top: 20px;                              /* Inner top padding */
-    border-top: 1px solid #ddd;                     /* Thin separator line */
-    display: flex;                                  /* Copyright left, links right */
-    justify-content: space-between;                 /* Spread content */
-    font-size: 0.9rem;                              /* Small text size */
-    flex-wrap: wrap;                                /* Stack on very small screens */
-    gap: 10px;                                      /* Space between items */
+    margin: 40px auto 0;                          
+    padding-top: 20px;                             
+    border-top: 1px solid #ddd;                    
+    display: flex;                                  
+    justify-content: space-between;                 
+    font-size: 0.9rem;                             
+    flex-wrap: wrap;                      
+    gap: 10px;
 }
 
-/* ==================== FOOTER END ==================== */
+/* FOOTER END */
 

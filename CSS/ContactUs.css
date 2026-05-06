@@ -1,5 +1,3 @@
-/* ==================== GLOBAL STYLES START ==================== */
-
 body {
     margin: 0;                                      /* Remove default browser margin */
     background-color: rgb(254, 255, 255);           /* Light page background */
@@ -14,52 +12,21 @@ h1, h2, h3, h4, h5, h6 {
 @font-face {
     font-family: "TitleFont";
     src: url("../Assets/Fonts/Mythology\ Of\ Egypt.otf");
+
 }
 
-/* ==================== GLOBAL STYLES END ==================== */
-
-
-/* ==================== HEADER START ==================== */
 
 .HeaderImage {
-    height: 42vh;                                  /* Full screen height */
-    position: relative;                             /* For positioning child elements */
-    background-image: url("../Assets/IMG/contactHeader.png"); /* Background image */
-    background-size: cover;                         /* Cover entire area */
-    background-position: center;                    /* Center the image */
-    background-repeat: no-repeat;                   /* No tiling */
+    height: 50vh;                                
+    position: relative;                          
+    background-image: url("../Assets/IMG/adoptHeader.png"); 
+    background-size: cover;                       
+    background-position: center;                
+    background-repeat: no-repeat;                   
     margin-bottom: 0;
 }
 
-
-.hero {
-    position: relative;                             /* Position hero text freely */
-    top: 10vh;                                      /* Move down from top */
-    left: 65vh;                                    /* Move to the right side */
-    transform: none;                                /* No centering transform */
-    text-align: left;                               /* Left aligned text */
-    max-width: 520px;                               /* Control text width */
-    color: #ffffff;                                 /* White text */
-}
-
-/* Hero title */
-.hero h1 {
-    font-family: "TitleFont", sans-serif;           /* Custom title font */
-    font-size: 90px;                                /* Large title size */
-    color: #ffffff;                                 /* Gold color */
-    margin-bottom: 10px;                            /* Space below title */
-    letter-spacing: 3px;                            /* Letter spacing */
-    line-height: 100px;                             /* Tight line height */
-}
-
-/* Hero subtitle */
-.hero p {
-    font-size: 1.6rem;                              /* Subtitle size */
-    font-weight: 500;                               /* Medium weight */
-    font-family: "poppins", sans-serif;
-}
-
-/* ==================== NAVBAR START ==================== */
+ /* NAVBAR START */
 
 .navbar{
     display: flex;
@@ -72,17 +39,16 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 100px;
     top: 30px;
     z-index: 10;
-    border-radius: 40px;
+    border-radius: 30px;
 }
 
-/* Logo */
-.logo img {
-    width: 250px;                                   /* Logo size */
-    height: auto;                                   /* Keep proportions */
-    margin: 10px;
+.logo img{
+    width: 250px;
+    height: auto;
+    margin-left: 40px;
+
 }
 
-/* Menu links */
 .menu{
     display: flex;
     justify-content: center;
@@ -90,32 +56,56 @@ h1, h2, h3, h4, h5, h6 {
     gap: 35px;
 }
 
-/* Menu link styles */
 .menu a{
-    text-decoration: none;                          /* No underline */
-    color: black;                                   /* Black text */
-    font-size: 20px;                                /* Large text */
+    text-decoration: none;                          
+    color: black;                                  
+    font-size: 20px;                               
     font-weight: 400;
     transition: 0.2s;
     font-style: bold;
 }
 
-/* Link hover */
 a:hover {
-    color: aqua;                                    /* Cyan on hover */
-    font-size: 18px;                                /* Slight size change */
+    color: aqua;                                   
+    font-size: 18px; 
 }
 
-/* ==================== SEARCH BAR START ==================== */
 
-/* ==================== SEARCH BAR START ==================== */
+.hero {
+    position: relative;                          
+    top: 5vh;                                     
+    left: 75vh;                                   
+    transform: none;                                
+    text-align: left;                              
+    max-width: 520px;                            
+    color: #ffffff;                                
+}
+
+/* Hero title */
+.hero h1 {
+    font-family: "TitleFont", sans-serif;          
+    font-size: 90px;                               
+    color: #ffffff;                             
+    margin-bottom: 10px;                           
+    letter-spacing: 3px;                       
+    line-height: 100px;                        
+}
+
+/* Hero subtitle */
+.hero p {
+    font-size: 1.6rem;                          
+    font-weight: 500;                             
+    font-family: "poppins", sans-serif;
+}
+
+/* SEARCH BAR START */
 .Search {
-    display: flex;                                  /* Input and button together */
-    align-items: center;                            /* Vertical center */
-    background-color: white;                        /* White background */
+    display: flex;                                  
+    align-items: center;                            
+    background-color: white;                       
     border: none;
-    border-radius: 5px;                             /* Slight rounding */
-    padding: 2px 5px;                               /* Inner spacing */
+    border-radius: 5px;                             
+    padding: 2px 5px;                             
     height: 50px;
     width: 300px;
     margin-right: 50px;
@@ -123,11 +113,11 @@ a:hover {
 
 /* Search input */
 .Search input {
-    border: none;                                   /* Clean input */
-    outline: none;                                  /* No focus glow */
+    border: none;                               
+    outline: none;                                
     padding: 5px 10px;
     font-size: 16px;
-    width: 250px;                                   /* Input width */
+    width: 250px;                                 
     background: transparent;
 }
 
@@ -146,7 +136,7 @@ a:hover {
 
 /* Button hover */
 .Search button:hover {
-    background-color: #e9ad1c;                      /* Gold on hover */
+    background-color: #e9ad1c;     
     color: #fff;
 }
 
