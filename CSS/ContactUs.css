@@ -110,6 +110,9 @@ a:hover {
     width: 300px;
     margin-right: 50px;
 }
+.Search-Icon-Nav{
+    padding-left: 10px;
+}
 
 /* Search input */
 .Search input {

@@ -74,8 +74,8 @@ a:hover {
 
 .hero {
     position: relative;                          
-    top: 5vh;                                     
-    left: 75vh;                                   
+    top: 15vh;                                     
+    left: 50vh;                                   
     transform: none;                                
     text-align: left;                              
     max-width: 520px;                            
@@ -89,7 +89,8 @@ a:hover {
     color: #ffffff;                             
     margin-bottom: 10px;                           
     letter-spacing: 3px;                       
-    line-height: 100px;                        
+    line-height: 100px;        
+    white-space: nowrap;                
 }
 
 /* Hero subtitle */
@@ -110,6 +111,10 @@ a:hover {
     height: 50px;
     width: 300px;
     margin-right: 50px;
+}
+
+.Search-Icon-Nav{
+    padding-left: 10px;
 }
 
 /* Search input */
@@ -182,7 +187,7 @@ a:hover {
     display: flex;
     align-items: center;
     background-color: #e9ad1c; 
-    padding: 35px 100px;     
+    padding: 30px 100px;     
     color: #ffffff;          
     font-weight: 500;
 }
@@ -191,31 +196,52 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 20px;
+    padding-right:80px;
+    
 }
 
-.divider {
-    border-left: 3px solid #6bb8ff;
-    height: 35px;
-    margin-left: 10px;
+.filter-middle {
+    border-left: 3px solid #828385;
+    line-height: 35px;
+    padding-left: 30px;
     margin-right:30px;
+    white-space: nowrap;
 }
 
 .filter-right {
     display: flex; 
-    gap: 15px;
+    gap: 8px;
     margin-left: 100px;
+    margin-left: 300px;
 }
 
+.filter-right span {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    
+}
 
-.display-box{
+.display-box-1{
     background-color:#fdf2d5;
     color: #4a148c;
-    padding: 5px 50px 5px 30px;
+    padding: 10px 20px;
     border-radius: 15px;
-    font-weight: 600;
+    font-weight: 400;
     margin-left: 15px;
     margin-right: 15px;
-    font-size: 25px;
+    font-size: 23px;
+}
+
+.display-box-2{
+    background-color:#fdf2d5;
+    color: #4a148c;
+    padding: 10px 100px 10px 20px;
+    border-radius: 15px;
+    font-weight: 400;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 23px;
 }
 
 /* Yellow Filter-Bar Ends */
@@ -242,7 +268,7 @@ a:hover {
     border-radius: 20px;                           
 }
 .Adoption-text{
-    margin-top: -70px;
+    margin-top: -10px;
     margin-left: 10px;
 }
 
@@ -273,6 +299,14 @@ a:hover {
 .Parent-Stars{
     display: flex;
     flex-direction: row;
+}
+
+.Friendly-Ally{
+    border-left: 2px solid #a7a7a7;
+    color: #888;
+    padding-left: 20px;
+    margin-left: 60px;
+    line-height: 35px;
 }
 
 .Adoption-text p {
@@ -350,6 +384,51 @@ margin-left: 20px;
 
 /* Adoption 1 */
 
+/* Adoption 2 */
+.Adoption-Start-Second {
+    background-color: #1e3a8a;                     
+    color:rgb(255, 255, 255);                                
+    padding: 80px 60px;                             
+}
+
+
+.new-price-Second{
+    font-weight: 500;
+    color: #15d5f5;
+}
+
+.Amount-Selector-Second {
+  display: flex;
+  align-items: center;
+  background: #e9ad1c;
+  color: white;
+  border-radius: 12px;
+  padding: 20px 16px;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: -200px;
+}
+
+/* Adoption 2 */
+
+/* bottom button */
+
+.Botton-Button button {
+    background: #a78432;                           
+    color: white;
+    border: none;
+    padding: 20px 70px;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-weight: 900;
+    margin-top: 5px;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 1150px;
+}
+
+/* bottom button */
 
 /* FOOTER START */
 
