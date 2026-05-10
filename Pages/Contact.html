@@ -24,11 +24,14 @@
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
          <script src="https://kit.fontawesome.com/" crossorigin="anonymous"></script>
 
+    <!-- javascript -->
+        <script src="../JS/Contact.js"></script>
+
     </head>
 
 <body>
 
-    <!-- ==================== HEADER START ==================== -->
+<!-- HEADER START -->
     <header>
         <!-- Header Image Container Start -->
         <div class="HeaderImage contact-header">
@@ -68,7 +71,7 @@
             <!-- Navbar End -->
 
             <!-- Hero Section Start -->
-            <section class="hero contact-hero">
+            <section class="hero">
                 <h1>CONTACT US</h1>
             </section>
             <!-- Hero Section End -->
@@ -76,10 +79,10 @@
         </div>
         <!-- Header Image Container End -->
     </header>
-    <!-- ==================== HEADER END ==================== -->
+<!-- HEADER END -->
 
 
-<!-- ==================== ABOUT SECTION START ==================== -->
+<!-- ABOUT SECTION START -->
 <section class="about-section">
     <div class="about-container">
         <div class="about-row">
@@ -88,7 +91,19 @@
             <div class="about-text">
                 <span class="section-label2">ABOUT</span>
                 <h2>Mythos Cradle</h2>
-                <p><br>Welcome to The Mythos Cradle, where we are dedicated to nurturing<br> <br>the next generation of legendary companions into loving homes. As a<br> <br>sanctuary and adoption agency, we specialize in connecting families<br> <br>with magical creatures, carefully matching each little legend to the<br> <br>caretakers who will best support their growth and well-being. From<br> <br>playful blue dragons to gentle forest spirits, every adoption is<br> <br>designed to foster wonder, curiosity, and companionship. With a<br> <br>commitment to ethical care, safety, and magical enrichment, we<br> <br>strive to create joyful experiences for both creatures and their new<br> <br>families. Join us as we celebrate the enchantment of mythology and<br> <br>turn legendary beings into cherished members of your household.<br></p>
+                <p>
+                <br>Welcome to The Mythos Cradle, where we are dedicated to nurturing<br>
+                <br>the next generation of legendary companions into loving homes. As a<br>
+                <br>sanctuary and adoption agency, we specialize in connecting families<br>
+                <br>with magical creatures, carefully matching each little legend to the<br>
+                <br>caretakers who will best support their growth and well-being. From<br>
+                <br>playful blue dragons to gentle forest spirits, every adoption is<br>
+                <br>designed to foster wonder, curiosity, and companionship. With a<br>
+                <br>commitment to ethical care, safety, and magical enrichment, we<br>
+                <br>strive to create joyful experiences for both creatures and their new<br>
+                <br>families. Join us as we celebrate the enchantment of mythology and<br>
+                <br>turn legendary beings into cherished members of your household.<br>
+                </p>
 
             <!-- Right: Image -->
             <div class="about-image">
@@ -98,11 +113,11 @@
         </div>
     </div>
 </section>
-    <!-- ==================== ABOUT SECTION START ==================== -->
+<!-- ABOUT SECTION START -->
 
 
-    <!-- ==================== CONTACT FORM & INFO START ==================== -->
-   <!-- ==================== CONTACT SECTION START ==================== -->
+<!-- CONTACT FORM & INFO START -->
+<!-- CONTACT SECTION START -->
 <section class="contact-section">
     <div class="contact-container">
         <div class="contact-row">
@@ -110,18 +125,18 @@
             <!-- Left: Social Media + Map -->
             <div class="contact-left">
 
-                <h5 class="uppercase small-spacing">Contact Us Through Our</h5>
-                <h4 class="medium-spacing">SOCIAL MEDIA PAGES</h4>
+                <h5 class="Message1">Contact Us Through Our</h5>
+                <h4 class="Message2">SOCIAL MEDIA PAGES</h4>
                 
-                <div class="social-icons large-spacing">
+                <div class="social-icons">
                    <a href="https://www.facebook.com/theopenwindow"><img src="../Assets/IMG/sm1.png" alt="Facebook" width="75"></a>
                     <a href="https://www.tiktok.com/@open_window_"><img src="../Assets/IMG/sm2.png" alt="TikTok" width="75"></a>
                     <a href="https://www.instagram.com/openwindowinstitute/"><img src="../Assets/IMG/sm3.png" alt="Instagram" width="75"></a>
                     <a href="https://x.com/open_window_"><img src="../Assets/IMG/sm4.png" alt="X" width="75"></a>
                 </div>
 
-                <h5 class="uppercase small-spacing">OR VISIT US AT OUR</h5>
-                <h4 class="small-spacing">PHYSICAL LOCATION</h4>
+                <h5 class="Message1">OR VISIT US AT OUR</h5>
+                <h4 class="Message2">PHYSICAL LOCATION</h4>
 
                 <div class="Map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.317263243835!2d28.206833211147558!3d-25.891938951234756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956608911ce097%3A0x519896b4b6eda40a!2sOpen%20Window%20-%20Centurion!5e0!3m2!1sen!2sza!4v1774520429373!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -132,9 +147,9 @@
             <div class="contact-right">
                 <div class="contact-form-box">
 
-                    <h4 class="medium-spacing">SEND US A MESSAGE</h4>
+                    <h4 class="Message">SEND US A MESSAGE</h4>
                     
-                    <form>
+                    <form id="ContactForm">
                         <div class="form-group">
                             <label>Your name</label>
                             <input type="text" placeholder="Your name" required>
@@ -159,15 +174,16 @@
                     </form>
 
                 </div>
+                <div id="formMessage"></div>
             </div>
 
         </div>
     </div>
 </section>
-<!-- ==================== CONTACT SECTION END ==================== -->
+<!-- CONTACT SECTION END -->
 
 
- <!-- ==================== FOOTER START ==================== -->
+<!-- FOOTER START -->
     <footer class="site-footer">
         <div class="footer-wrapper">
             
@@ -211,7 +227,7 @@
         <!-- Footer Bottom End -->
 
     </footer>
-    <!-- ==================== FOOTER END ==================== -->
+<!-- FOOTER END -->
 
 </body>
 
