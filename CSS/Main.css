@@ -149,6 +149,36 @@ a:hover {
     font-family: "poppins", sans-serif;
 }
 
+/* CART BADGE */
+.cart {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.cart i {
+    font-size: 20px;
+    color: #333;
+}
+
+.cartAmount {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -6px;
+    right: -8px;
+    background-color: #15d5f5;      
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white;            
+    line-height: 1;
+}
+
 /* HEADER END */
 /* BEGIN YOUR JOURNEY SECTION START */
 
