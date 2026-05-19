@@ -28,6 +28,8 @@
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
          <script src="https://kit.fontawesome.com/" crossorigin="anonymous"></script>
 
+            <script src="../Scripts/quantityjs.js"></script>
+            
 </head>
 
 <body>
@@ -945,37 +947,10 @@
 
     </footer>
 <!-- FOOTER END -->
-<script>
-// Simple Quantity Counter Only
+<script src="../Scripts/../JS/Script.js"></script>
 
-document.addEventListener("DOMContentLoaded", function() {
-
-    // Find all quantity sections
-    var boxes = document.querySelectorAll(".Amount-Selector, .Amount-Selector-Second");
-
-    boxes.forEach(function(box) {
-
-        var minus = box.querySelector(".Minus");
-        var plus = box.querySelector(".Plus");
-        var display = box.querySelector(".Value");
-
-        var number = 0;
-
-        minus.addEventListener("click", function() {
-            if (number > 0) {
-                number = number - 1;
-                display.textContent = number;
-            }
-        });
-
-        plus.addEventListener("click", function() {
-            number = number + 1;
-            display.textContent = number;
-        });
-
-    });
-
-});
-</script>
 </body>
 </html>
+
+
+
