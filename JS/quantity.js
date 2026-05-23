@@ -1,25 +1,24 @@
-let cartTotal = 0;
+document.addEventListener("DOMContentLoaded", function() {
 
-document.addEventListener("DOMContentLoaded", function()) {}
+    let boxes = document.querySelectorAll(".Amount-Selector, .Amount-Selector-Second");
 
-let Boxes = document.querySelectorAll(".Adoption-Start,.Adoption-Start-Second");
+    boxes.forEach(function(box) {
+        
+        let minus = box.querySelector(".Minus");
+        let plus = box.querySelector(".Plus");
+        let num = box.querySelector(".Value");
 
-boxes.forEach(function(box) {
-    
-    let minus = box.querySelectorAll(".minus");
-    let plus = box.querySelectorAll(".plus");
-    let num = box.querySelectorAll(".value");
+        let count = 0;
 
-    let count = 0;
+        minus.addEventListener("click", function decrease() {
+            if (count > 0) count--;
+            num.innerHTML = count;
+        });
 
+        plus.addEventListener("click", function increase() {
+            count++;
+            num.innerHTML = count;
+        });
+    });
 
-
-
-
-
-
-
-
-
-
-})
+   });
