@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let totalItems = 0;
 
-    //  Quantity Buttons (+ and -) 
+    //  Quantity Buttons
     let boxes = document.querySelectorAll(".Amount-Selector, .Amount-Selector-Second");
 
     boxes.forEach(function(box) {
@@ -31,8 +31,8 @@ document.addEventListener("DOMContentLoaded", function() {
             let wrapper = this.closest(".Adoption-wrapper");
             if (!wrapper) return;
 
-            let qtyElement = wrapper.querySelector(".Value");
-            let quantity = qtyElement ? parseInt(qtyElement.textContent) : 1;
+            let quantityElement = wrapper.querySelector(".Value");
+            let quantity = quantityElement ? parseInt(quantityElement.textContent) : 1;
 
            
             totalItems += quantity;
@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
+// Contact Form
 
 let ContactForm = document.getElementById('ContactForm')
 
@@ -57,13 +58,11 @@ let ContactForm = document.getElementById('ContactForm')
 ContactForm.addEventListener('submit', (Event) => {
 Event.preventDefault();
 
-let output = `<p>Thank you </p>` 
+let output = `<p>Thank you  for you Time Enjoy.</p>` 
 
 document.querySelector('.FormMessage') .innerHTML = output
 
 let FormMessageId = new bootstrap.Modal(document.getElementById("FormMessageId"))
 FormMessageId.show();
-
-
 
 });
